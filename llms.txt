@@ -1,0 +1,27 @@
+# Instalgas Chile - Instalaciones de Gas y Gasfitería Certificada SEC
+> Instalgas Chile (https://instalgaschile.cl) es una empresa técnica de servicios de gasfitería e instalaciones de gas en Santiago y la V Región de Chile, dirigida por el Instalador Autorizado SEC Clase 1 Domingo Isaín Plaza Caamaño (RUT: 12.738.961-6). Especializada en detección no invasiva de fugas con gas trazador, sellado de cañerías sin romper con polímero alemán Prodoral R6-1 y regularización oficial para Sello Verde SEC según el Decreto Supremo N° 66.
+
+## Información de Contacto y Emergencias
+- **Teléfono y Urgencias 24/7:** +56 9 4987 7316
+- **WhatsApp Directo:** https://wa.me/56949877316
+- **Sitio Web Oficial:** https://instalgaschile.cl
+- **Director Técnico:** Domingo Isaín Plaza Caamaño (RUT: 12.738.961-6) - Instalador Autorizado SEC Clase 1
+- **Casa Matriz:** Av. Libertador Bernardo O'Higgins 1302, Santiago, Región Metropolitana, Chile
+- **Horario de Operación:** Urgencias 24 horas / Lunes a Domingo
+
+## Cobertura Geográfica
+- **Región Metropolitana (Santiago):** Las Condes, Vitacura, Lo Barnechea, Providencia, Ñuñoa, La Reina, Santiago Centro, Peñalolén, La Florida, Maipú, San Miguel, Macul, Huechuraba, Colina, Chicureo.
+- **V Región (Valparaíso):** Viña del Mar, Valparaíso, Quilpué, Concón.
+
+## Servicios Principales
+- [Detección de Fugas de Gas sin Romper](https://instalgaschile.cl/deteccion-fugas-gas): Localización milimétrica con gas trazador (formiergas N2/H2 95/5) y geófono electroacústico sin demoler pisos ni muros.
+- [Sellado con Prodoral R6-1](https://instalgaschile.cl/servicios#prodoral): Polímero alemán certificado para sellar cañerías interiores con fugas desde adentro, evitando demolición y picado de baldosas.
+- [Certificación y Sello Verde SEC](https://instalgaschile.cl/certificacion-sec): Subsanación de observaciones de Sello Rojo o Amarillo, proyectos TC6 y tramitación del Sello Verde oficial SEC.
+- [Redes de Gas en Cobre y Conversión](https://instalgaschile.cl/servicios#redes): Montaje de cañerías de cobre según norma DS 66 y conversión de artefactos de Gas Licuado (GLP) a Gas Natural (Metrogas).
+- [Mantención de Calefont y Calderas](https://instalgaschile.cl/servicios#calefont): Reparación de calefont convencionales, ionizados y de tiro forzado, medición de monóxido de carbono e instalación de ductos certificados.
+
+## Documentación y Enlaces Clave
+- [Catálogo de Servicios Completo](https://instalgaschile.cl/servicios)
+- [Página de Contacto y Urgencias](https://instalgaschile.cl/contacto)
+- [Documentación Completa para Modelos de Lenguaje](https://instalgaschile.cl/llms-full.txt)
+- [Mapa del Sitio XML](https://instalgaschile.cl/sitemap.xml)

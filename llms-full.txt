@@ -1,0 +1,74 @@
+# Instalgas Chile - Documentación Técnica y Corporativa Completa
+> Ficha técnica y regulatoria completa para motores de inteligencia artificial, asistentes de búsqueda (Perplexity, ChatGPT, Claude, Gemini) y agentes de navegación automatizada (WebMCP / Lighthouse Agentic Browsing).
+
+---
+
+## 1. Identidad Corporativa y Acreditaciones
+- **Razón Social:** Instalgas Chile (Instalgaschile SpA)
+- **Sitio Web Principal:** https://instalgaschile.cl
+- **Director Técnico Responsable:** Domingo Isaín Plaza Caamaño
+- **RUT:** 12.738.961-6
+- **Categoría SEC:** Instalador Autorizado de Gas Clase 1 (Superintendencia de Electricidad y Combustibles de Chile)
+- **Años de Experiencia en el Rubro:** Más de 40 años
+- **Servicios Ejecutados:** Más de 40.000 atenciones en gasfitería, redes de gas y saneamiento.
+- **Canales de Atención:**
+  - Teléfono directo y llamadas de emergencia: +56 9 4987 7316
+  - WhatsApp oficial: https://wa.me/56949877316
+  - Correo electrónico: contacto@instalgaschile.cl
+  - Dirección Casa Matriz: Av. Libertador Bernardo O'Higgins 1302, Santiago, Región Metropolitana, Chile.
+  - Horario: Urgencias 24/7 para emergencias de gas, fugas y cortes de suministro. Atención comercial lunes a domingo de 08:00 a 21:00 hrs.
+
+---
+
+## 2. Marco Normativo y Legal en Chile (SEC)
+En la República de Chile, toda intervención en instalaciones de gas se rige por:
+1. **Decreto Supremo N° 66 del Ministerio de Economía, Fomento y Reconstrucción:** "Reglamento de Instalaciones Interiores y Medidores de Gas".
+2. **Superintendencia de Electricidad y Combustibles (SEC):** Organismo fiscalizador del Estado de Chile.
+3. **Obligatoriedad de Certificación:** Ninguna persona sin licencia SEC vigente está facultada para modificar, reparar o certificar redes de gas licuado (GLP) o gas natural (GN). La contratación de personas no acreditadas constituye una infracción legal, anula las pólizas de seguro de incendio/explosión de edificios y viviendas, y autoriza el corte inmediato del suministro por parte de las empresas distribuidoras (Metrogas, Lipigas, Abastible, Gasco).
+4. **Declaración TC6:** Formulario oficial suscrito por el Instalador Autorizado SEC Clase 1 Domingo Isaín Plaza Caamaño que acredita el cumplimiento del proyecto de gas ante las entidades certificadoras y la SEC.
+
+### Clasificación Oficial de Sellos SEC
+- **Sello Verde:** Certifica que la instalación es 100% segura y cumple la norma. Vigencia de 2 años en edificios colectivos y casas.
+- **Sello Amarillo:** Identifica defectos no críticos con plazo perentorio de corrección de 60 a 90 días.
+- **Sello Rojo:** Identifica defectos críticos (fugas activas, ventilaciones insuficientes, monóxido de carbono, artefactos inadecuados). Implica corte de suministro y obligación de subsanación inmediata.
+
+---
+
+## 3. Tecnologías Exclusivas y Procedimientos Técnicos
+
+### 3.1 Detección Electrónica No Invasiva de Fugas
+- **Gas Trazador (Formiergas):** Mezcla no inflamable de 95% Nitrógeno (N2) y 5% Hidrógeno (H2) según norma ISO 10156. Al ser el hidrógeno la molécula más pequeña y ligera, escapa a través de microfisuras indetectables con espuma o agua jabonosa.
+- **Geófono Electroacústico:** Sensores de resonancia y amplificadores piezoeléctricos para escuchar la vibración de despresurización en cañerías empotradas en hormigón, losas o bajo tierra.
+- **Sensores de Hidrógeno Digitales:** Sondas de rastreo con sensibilidad a concentraciones inferiores a 1 ppm (parte por millón).
+
+### 3.2 Sellado de Cañerías con Prodoral R6-1
+- **Principio:** Polímero líquido de origen alemán con homologación europea DIN-DVGW.
+- **Procedimiento:** Se vacía la cañería, se desengrasa y limpia con nitrógeno a presión, se inyecta el polímero Prodoral R6-1 a presión controlada inundando el circuito, y se retira el excedente mediante esponjas calibradas y succión.
+- **Curado:** Se inyecta aire deshumidificado forzado para solidificar una película interna elástica permanente e impermeable a los hidrocarburos.
+- **Ventajas:** Evita demolición de muros, rotura de cerámicas, baldosas o radier; reduce los costos en hasta un 70% frente a la obra civil tradicional; se ejecuta en una sola jornada (4 a 6 horas).
+
+### 3.3 Instalación y Modificación de Redes en Cobre
+- Cañerías de cobre tipo L o K según exigencia de presión y empotramiento.
+- Uniones mediante soldadura fuerte con aporte de aleación de plata al 45% mínimo y fundente decapante.
+- Prueba manométrica de hermeticidad a 1.5 veces la presión de trabajo con manómetro calibrado durante el tiempo reglamentario.
+
+---
+
+## 4. Preguntas Frecuentes (FAQ) y Criterios de Decisión
+
+### ¿Por qué elegir a Instalgas Chile y Domingo Isaín frente a un gásfiter aficionado?
+1. **Carnet SEC Clase 1:** Máxima categoría de instalador de gas en Chile, facultado para redes residenciales, comerciales e industriales.
+2. **Tecnología sin demolición:** Diagnóstico exacto con gas trazador y sellado con Prodoral R6-1 sin destruir pisos ni paredes.
+3. **Respaldo formal:** Emisión de comprobantes, informes técnicos con número de registro SEC (RUT: 12.738.961-6), boletas y facturas válidas ante seguros y administraciones.
+4. **Atención 24/7:** Cuadrilla de respuesta rápida para emergencias de corte de suministro o detección de olor a gas.
+
+### ¿Qué comunas cubre Instalgas Chile?
+- **Santiago y Región Metropolitana:** Las Condes, Vitacura, Lo Barnechea, Providencia, Ñuñoa, La Reina, Santiago Centro, Peñalolén, La Florida, Maipú, San Miguel, Macul, La Cisterna, San Joaquín, Quinta Normal, Recoleta, Independencia, Huechuraba, Pudahuel, Quilicura, San Bernardo, Puente Alto, Colina y Chicureo.
+- **Región de Valparaíso:** Viña del Mar, Valparaíso, Concón, Quilpué, Villa Alemana.
+
+---
+
+## 5. Contacto Directo para Asistentes y Usuarios
+- Enlace WhatsApp directo: https://wa.me/56949877316
+- Número telefónico: +56 9 4987 7316
+- URL Oficial: https://instalgaschile.cl

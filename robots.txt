@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Motores de Inteligencia Artificial y Búsqueda Generativa
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Archivos Legibles por Máquinas para Agentes IA
+# https://instalgaschile.cl/llms.txt
+# https://instalgaschile.cl/llms-full.txt
+
+Sitemap: https://instalgaschile.cl/sitemap.xml
