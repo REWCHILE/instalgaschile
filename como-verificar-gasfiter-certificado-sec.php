@@ -77,9 +77,17 @@ require_once __DIR__ . '/includes/header.php';
           <li>&bull; Código QR de validación instantánea.</li>
         </ul>
 
-        <div style="text-align:center; margin:2rem 0;">
-          <img src="<?= SITE_URL ?>/assets/img/credencial-sec-domingo-isain.webp" alt="Ejemplo de Credencial Oficial SEC de Domingo Isaín Plaza Caamaño RUT 12.738.961-6" width="400" height="257" style="border-radius:var(--radius-md); box-shadow:var(--shadow-lg); border:2px solid var(--accent-red); margin:0 auto;" loading="lazy">
-          <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.5rem;">Credencial oficial de Domingo Isaín Plaza Caamaño (RUT: 12.738.961-6).</p>
+        <div style="display:flex; justify-content:center; gap:2rem; flex-wrap:wrap; margin:2rem 0; align-items:center;">
+          <div style="text-align:center;">
+            <img src="<?= SITE_URL ?>/assets/img/domingo-isain-plaza.webp" alt="Instalador Autorizado SEC Domingo Isaín Plaza Caamaño RUT 12.738.961-6" width="160" height="160" style="border-radius:12px; box-shadow:var(--shadow-md); border:3px solid var(--primary-blue); object-fit:cover; display:block; margin:0 auto;" loading="lazy">
+            <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.5rem; font-weight:600;">Domingo Isaín Plaza Caamaño<br><span style="color:#059669;">Instalador SEC Clase 3</span></p>
+          </div>
+          <div style="text-align:center;">
+            <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" title="Validar en portal oficial de la SEC">
+              <img src="<?= SITE_URL ?>/assets/img/qr-sec-domingo-isain.webp" alt="Código QR de Validación Oficial SEC de Domingo Isaín Plaza Caamaño" width="160" height="160" style="border-radius:12px; box-shadow:var(--shadow-md); border:3px solid #0284c7; background:#ffffff; padding:6px; display:block; margin:0 auto; cursor:pointer;" loading="lazy">
+            </a>
+            <p style="font-size:0.85rem; color:#0284c7; margin-top:0.5rem; font-weight:700;">QR Oficial SEC (Escanear o Clic &nearr;)</p>
+          </div>
         </div>
 
         <h2 style="font-size:1.6rem; margin-top:2rem; margin-bottom:1rem; color:var(--primary-blue);">

@@ -112,8 +112,8 @@ require_once __DIR__ . '/includes/header.php';
             </div>
 
             <div class="credential-body">
-              <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" title="Verificar credencial en portal SEC">
-                <img src="<?= SITE_URL ?>/assets/img/credencial-sec-domingo-isain.webp" alt="Credencial Oficial SEC de Domingo Isaín Plaza Caamaño RUT 12.738.961-6" class="credential-photo" width="110" height="110" fetchpriority="high" style="width:110px; height:110px; object-fit:cover; cursor:pointer;">
+              <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" title="Verificar credencial en portal SEC de Domingo Isaín Plaza Caamaño">
+                <img src="<?= SITE_URL ?>/assets/img/domingo-isain-plaza.webp" alt="Instalador Autorizado SEC Domingo Isaín Plaza Caamaño RUT 12.738.961-6" class="credential-photo" width="110" height="110" fetchpriority="high" style="width:110px; height:110px; object-fit:cover; border-radius:8px; border:2px solid #0284c7; cursor:pointer;">
               </a>
               <div class="credential-details">
                 <div class="credential-name" style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--primary-blue); margin-bottom: 0.2rem;"><?= DIRECTOR_NAME ?></div>
