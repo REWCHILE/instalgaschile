@@ -19,6 +19,10 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <!-- Preload de Fuentes WOFF2 para Cero Desplazamiento de Texto (0 CLS) -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2" as="font" type="font/woff2" crossorigin>
+
   <!-- Carga Asíncrona No Bloqueante de Google Fonts (display=swap) -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
@@ -70,6 +74,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
     .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; align-items: center; position: relative; z-index: 2; }
     .hero-tagline { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.2); padding: 0.4rem 1rem; border-radius: var(--radius-full); font-size: 0.85rem; font-weight: 600; color: #e2e8f0; margin-bottom: 1.25rem; }
     .hero-title { font-family: var(--font-heading); font-size: 2.75rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.25rem; color: #ffffff; }
+    .hero-title .highlight { color: #fca5a5; text-decoration: underline; text-decoration-color: var(--accent-red); display: inline-block; }
     .hero-subtitle { font-size: 1.125rem; color: #cbd5e1; margin-bottom: 2rem; line-height: 1.6; }
     .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.25rem; }
     
@@ -122,7 +127,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
     <div class="container top-bar-content">
       <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" class="top-badge-sec" style="text-decoration:none;" title="Verificar Certificado SEC Oficial en el portal del Gobierno de Chile (Estado: ACTIVO)">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        <span>Instalador Autorizado SEC Clase 3 • RUT: <?= DIRECTOR_RUT ?> <span style="background:#10b981; color:#ffffff; font-size:0.7rem; font-weight:800; padding:1px 6px; border-radius:3px; margin-left:4px;">ACTIVO &nearr;</span></span>
+        <span>Instalador Autorizado SEC Clase 3 • RUT: <?= DIRECTOR_RUT ?> <span style="background:#047857; color:#ffffff; font-size:0.7rem; font-weight:800; padding:2px 7px; border-radius:3px; margin-left:4px;">ACTIVO &nearr;</span></span>
       </a>
       <div class="top-emergency-contact">
         <a href="tel:+<?= PHONE_RAW ?>" class="top-phone-link" aria-label="Llamar a nuestra central de emergencias al <?= PHONE_DISPLAY ?>">

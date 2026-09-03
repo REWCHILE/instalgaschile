@@ -65,7 +65,7 @@ require_once __DIR__ . '/includes/header.php';
             <span>Instalador Autorizado SEC Clase 3 • DS 191 / DS 66</span>
           </div>
           <h1 class="hero-title">
-            Gasfiter Certificado SEC en Santiago y Detección de Fugas <span class="highlight">Sin Romper Pisos</span>
+            Gasfiter Certificado SEC en Santiago y Detección de Fugas <span class="highlight" style="display:inline-block;">Sin Romper Pisos</span>
           </h1>
           <p class="hero-subtitle">
             Especialistas en detección no destructiva con <strong>Gas Trazador y Geófono</strong>, sellado químico permanente con <strong>Prodoral R6-1</strong> y regularización oficial para <strong>Sello Verde SEC</strong>. Atención inmediata las 24 horas.
@@ -106,14 +106,14 @@ require_once __DIR__ . '/includes/header.php';
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                 <span>CERTIFICADO SEC OFICIAL &nearr;</span>
               </a>
-              <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" style="background:#10b981; color:#ffffff; font-size:0.75rem; font-weight:800; padding:3px 8px; border-radius:4px; text-decoration:none;" title="Licencia vigente y activa en el Registro Nacional de Instaladores de la SEC">
+              <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" style="background:#047857; color:#ffffff; font-size:0.75rem; font-weight:800; padding:4px 10px; border-radius:4px; text-decoration:none;" title="Licencia vigente y activa en el Registro Nacional de Instaladores de la SEC">
                 ESTADO: ACTIVO &check;
               </a>
             </div>
 
             <div class="credential-body" style="display:flex; gap:1.25rem; align-items:center; margin-bottom:1.25rem;">
               <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" title="Verificar credencial en portal SEC de Domingo Isaín Plaza Caamaño" style="display:block; flex-shrink:0; width:135px; height:135px;">
-                <img src="<?= SITE_URL ?>/assets/img/domingo-isain-plaza.webp" alt="Instalador Autorizado SEC Domingo Isaín Plaza Caamaño RUT 12.738.961-6" class="credential-photo" width="135" height="135" fetchpriority="high" style="width:135px; height:135px; min-width:135px; aspect-ratio:1/1; object-fit:cover; border-radius:12px; border:3px solid #0284c7; box-shadow:0 4px 14px rgba(2,132,199,0.2); cursor:pointer; display:block;">
+                <img src="<?= SITE_URL ?>/assets/img/domingo-isain-plaza.webp" alt="Instalador Autorizado SEC Domingo Isaín Plaza Caamaño RUT 12.738.961-6" class="credential-photo" width="135" height="135" fetchpriority="high" style="width:135px; height:135px; min-width:135px; aspect-ratio:1/1; box-sizing:border-box; object-fit:cover; border-radius:12px; border:3px solid #0284c7; box-shadow:0 4px 14px rgba(2,132,199,0.2); cursor:pointer; display:block;">
               </a>
               <div class="credential-details" style="flex:1;">
                 <div class="credential-name" style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--primary-blue); margin-bottom: 0.25rem; line-height:1.2;"><?= DIRECTOR_NAME ?></div>
@@ -129,8 +129,8 @@ require_once __DIR__ . '/includes/header.php';
 
             <!-- Bloque de Código QR Escaneable en Tamaño Grande -->
             <div class="credential-qr-box" style="background:#f0f9ff; border:1px solid #bae6fd; border-radius:8px; padding:0.85rem; margin:1rem 0; display:flex; align-items:center; gap:1rem;">
-              <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" title="Haga clic para validar el código QR oficial en el portal de la SEC" style="display:block; flex-shrink:0;">
-                <img src="<?= SITE_URL ?>/assets/img/qr-sec-domingo-isain.webp" alt="Código QR de Validación Oficial SEC Domingo Isaín Plaza Caamaño" width="110" height="110" style="width:110px; height:110px; border-radius:6px; border:2px solid #0284c7; background:#ffffff; display:block; padding:4px; box-shadow:0 2px 6px rgba(2,132,199,0.15); cursor:pointer;">
+              <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" title="Haga clic para validar el código QR oficial en el portal de la SEC" style="display:block; flex-shrink:0; width:110px; height:110px;">
+                <img src="<?= SITE_URL ?>/assets/img/qr-sec-domingo-isain.webp" alt="Código QR de Validación Oficial SEC Domingo Isaín Plaza Caamaño" width="110" height="110" style="width:110px; height:110px; box-sizing:border-box; border-radius:6px; border:2px solid #0284c7; background:#ffffff; display:block; padding:4px; box-shadow:0 2px 6px rgba(2,132,199,0.15); cursor:pointer;">
               </a>
               <div style="flex:1;">
                 <div style="font-size:0.75rem; font-weight:800; color:#0369a1; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:0.2rem;">Verificación Oficial SEC</div>
@@ -508,12 +508,12 @@ require_once __DIR__ . '/includes/header.php';
             <p class="blog-text">
               Descubra por qué contratar a un gásfiter aficionado puede provocar cortes de suministro por Metrogas o la anulación de su seguro de hogar.
             </p>
-            <a href="<?= SITE_URL ?>/diferencia-gasfiter-certificado-y-no-certificado" class="btn btn-outline btn-sm">Leer Guía Completa &rarr;</a>
+            <a href="<?= SITE_URL ?>/diferencia-gasfiter-certificado-y-no-certificado" class="btn btn-outline btn-sm" aria-label="Leer guía sobre diferencias entre gasfiter certificado y no certificado">Leer Guía Completa &rarr;</a>
           </div>
         </article>
 
         <article class="blog-card">
-          <a href="<?= SITE_URL ?>/como-verificar-gasfiter-certificado-sec" style="display:block; overflow:hidden;">
+          <a href="<?= SITE_URL ?>/como-verificar-gasfiter-certificado-sec" style="display:block; overflow:hidden;" aria-label="Verificar instalador en la SEC">
             <img src="<?= SITE_URL ?>/blog/verificar-gasfiter-certificado-sec.png" alt="Cómo verificar si un gasfiter es certificado SEC" width="400" height="225" style="width:100%; height:200px; object-fit:cover; display:block;" loading="lazy">
           </a>
           <div class="blog-body">
@@ -524,12 +524,12 @@ require_once __DIR__ . '/includes/header.php';
             <p class="blog-text">
               Paso a paso para consultar el registro público de la Superintendencia de Electricidad y Combustibles y validar el código QR oficial.
             </p>
-            <a href="<?= SITE_URL ?>/como-verificar-gasfiter-certificado-sec" class="btn btn-outline btn-sm">Leer Guía Completa &rarr;</a>
+            <a href="<?= SITE_URL ?>/como-verificar-gasfiter-certificado-sec" class="btn btn-outline btn-sm" aria-label="Leer guía sobre cómo verificar si un gasfiter es certificado SEC">Leer Guía Completa &rarr;</a>
           </div>
         </article>
 
         <article class="blog-card">
-          <a href="<?= SITE_URL ?>/que-hace-un-gasfiter-certificado-sec" style="display:block; overflow:hidden;">
+          <a href="<?= SITE_URL ?>/que-hace-un-gasfiter-certificado-sec" style="display:block; overflow:hidden;" aria-label="Conocer funciones de gasfiter SEC">
             <img src="<?= SITE_URL ?>/blog/funciones-gasfiter-certificado-sec.png" alt="¿Qué hace un gasfiter certificado SEC?" width="400" height="225" style="width:100%; height:200px; object-fit:cover; display:block;" loading="lazy">
           </a>
           <div class="blog-body">
@@ -540,7 +540,7 @@ require_once __DIR__ . '/includes/header.php';
             <p class="blog-text">
               Conozca el campo de acción de un instalador Clase 3: redes interiores de cobre DS 66, pruebas de hermeticidad y tramitaciones de Sello Verde.
             </p>
-            <a href="<?= SITE_URL ?>/que-hace-un-gasfiter-certificado-sec" class="btn btn-outline btn-sm">Leer Guía Completa &rarr;</a>
+            <a href="<?= SITE_URL ?>/que-hace-un-gasfiter-certificado-sec" class="btn btn-outline btn-sm" aria-label="Leer guía sobre qué hace un gasfiter certificado SEC">Leer Guía Completa &rarr;</a>
           </div>
         </article>
       </div>

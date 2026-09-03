@@ -78,7 +78,7 @@ require_once __DIR__ . '/includes/header.php';
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                 <span>LICENCIA SEC OFICIAL &nearr;</span>
               </a>
-              <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" style="background:#10b981; color:#ffffff; font-size:0.75rem; font-weight:800; padding:3px 8px; border-radius:4px; text-decoration:none;">
+              <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" style="background:#047857; color:#ffffff; font-size:0.75rem; font-weight:800; padding:4px 10px; border-radius:4px; text-decoration:none;">
                 ESTADO: ACTIVO &check;
               </a>
             </div>

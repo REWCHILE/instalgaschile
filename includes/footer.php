@@ -93,11 +93,11 @@ if (!defined('SITE_NAME')) {
       </div>
 
       <!-- Barra Inferior de Copyright -->
-      <div class="footer-bottom" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+      <div class="footer-bottom" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; color:#cbd5e1;">
         <div>
-          &copy; <?= date('Y') ?> <strong><?= SITE_NAME ?> &reg;</strong> – Gasfiter Certificado SEC en Chile - Desarrollado por <a href="https://www.rew.cl/" target="_blank" rel="noopener noreferrer" style="color:#94a3b8; text-decoration:underline;">REW</a>
+          &copy; <?= date('Y') ?> <strong style="color:#ffffff;"><?= SITE_NAME ?> &reg;</strong> – Gasfiter Certificado SEC en Chile - Desarrollado por <a href="https://www.rew.cl/" target="_blank" rel="noopener noreferrer" style="color:#cbd5e1; text-decoration:underline;">REW</a>
         </div>
-        <div style="font-size:0.85rem; color:#64748b;">
+        <div style="font-size:0.85rem; color:#cbd5e1;">
           Todos los derechos reservados.
         </div>
       </div>

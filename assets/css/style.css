@@ -290,7 +290,7 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   border-radius: var(--radius-sm);
   border: none;
   cursor: pointer;
-  transition: transform 0.15s ease, background-color 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.15s ease, opacity 0.15s ease;
   text-align: center;
 }
 
@@ -582,7 +582,7 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   padding: 2rem;
   box-shadow: var(--shadow-md);
   border: 1px solid var(--border-color);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -597,7 +597,6 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   right: 0;
   height: 4px;
   background: var(--primary-blue);
-  transition: background-color 0.2s ease;
 }
 
 .service-card:hover {
@@ -620,7 +619,6 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   justify-content: center;
   color: var(--primary-blue);
   margin-bottom: 1.25rem;
-  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .service-card:hover .service-icon-box {
@@ -720,7 +718,6 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   border-radius: var(--radius-md);
   margin-bottom: 1rem;
   box-shadow: var(--shadow-sm);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .faq-item.is-open {
@@ -927,7 +924,7 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   align-items: center;
   justify-content: center;
   box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease;
   text-decoration: none;
 }
 
@@ -1045,7 +1042,6 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   font-size: 0.95rem;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
-  transition: border-color var(--transition-fast);
 }
 
 .form-control:focus {
@@ -1174,7 +1170,7 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-sm);
   overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease;
   display: flex;
   flex-direction: column;
 }
