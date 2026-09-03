@@ -111,18 +111,18 @@ require_once __DIR__ . '/includes/header.php';
               </a>
             </div>
 
-            <div class="credential-body">
-              <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" title="Verificar credencial en portal SEC de Domingo Isaín Plaza Caamaño">
-                <img src="<?= SITE_URL ?>/assets/img/domingo-isain-plaza.webp" alt="Instalador Autorizado SEC Domingo Isaín Plaza Caamaño RUT 12.738.961-6" class="credential-photo" width="110" height="110" fetchpriority="high" style="width:110px; height:110px; object-fit:cover; border-radius:8px; border:2px solid #0284c7; cursor:pointer;">
+            <div class="credential-body" style="display:flex; gap:1.25rem; align-items:center; margin-bottom:1.25rem;">
+              <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" title="Verificar credencial en portal SEC de Domingo Isaín Plaza Caamaño" style="display:block; flex-shrink:0; width:135px; height:135px;">
+                <img src="<?= SITE_URL ?>/assets/img/domingo-isain-plaza.webp" alt="Instalador Autorizado SEC Domingo Isaín Plaza Caamaño RUT 12.738.961-6" class="credential-photo" width="135" height="135" fetchpriority="high" style="width:135px; height:135px; min-width:135px; aspect-ratio:1/1; object-fit:cover; border-radius:12px; border:3px solid #0284c7; box-shadow:0 4px 14px rgba(2,132,199,0.2); cursor:pointer; display:block;">
               </a>
-              <div class="credential-details">
-                <div class="credential-name" style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--primary-blue); margin-bottom: 0.2rem;"><?= DIRECTOR_NAME ?></div>
-                <div class="credential-rut" style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap; margin-bottom:0.3rem;">
-                  <span>RUT: <?= DIRECTOR_RUT ?></span>
-                  <span style="color:#059669; font-weight:700;">• Clase 3 (DS 191)</span>
+              <div class="credential-details" style="flex:1;">
+                <div class="credential-name" style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--primary-blue); margin-bottom: 0.25rem; line-height:1.2;"><?= DIRECTOR_NAME ?></div>
+                <div class="credential-rut" style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap; margin-bottom:0.4rem;">
+                  <span style="font-weight:700; color:#1e293b; font-size:0.95rem;">RUT: <?= DIRECTOR_RUT ?></span>
+                  <span style="background:#ecfdf5; color:#059669; font-weight:800; font-size:0.75rem; padding:2px 8px; border-radius:4px; border:1px solid #a7f3d0;">Clase 3 (DS 191)</span>
                 </div>
-                <div class="credential-role" style="font-size:0.85rem; color:#475569; line-height:1.4;">
-                  Instalador Autorizado de Gas Clase 3 ante la SEC (desde 2012). Más de 40 años de oficio técnico y más de 40.000 servicios ejecutados.
+                <div class="credential-role" style="font-size:0.875rem; color:#475569; line-height:1.45;">
+                  Instalador Autorizado de Gas Clase 3 ante la SEC (desde 2012). Más de 40 años de oficio técnico y más de 40.000 servicios ejecutados con éxito.
                 </div>
               </div>
             </div>

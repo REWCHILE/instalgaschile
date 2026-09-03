@@ -78,8 +78,8 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
     .credential-card { background: #ffffff; border-radius: 12px; padding: 1.75rem; box-shadow: 0 10px 25px rgba(0,0,0,0.15); border: 1px solid var(--border-color); color: var(--text-dark); }
     .credential-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid #e2e8f0; }
     .sec-stamp { display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(16, 185, 129, 0.12); color: var(--sec-green-dark); font-weight: 800; font-size: 0.8rem; padding: 0.35rem 0.75rem; border-radius: 4px; }
-    .credential-body { display: flex; gap: 1.25rem; align-items: flex-start; margin-bottom: 1rem; }
-    .credential-photo { width: 110px; height: 110px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
+    .credential-body { display: flex; gap: 1.25rem; align-items: center; margin-bottom: 1.25rem; }
+    .credential-photo { width: 135px; height: 135px; min-width: 135px; aspect-ratio: 1/1; border-radius: 12px; object-fit: cover; flex-shrink: 0; }
     
     /* Botones Críticos */
     .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; font-family: var(--font-heading); font-weight: 700; font-size: 0.95rem; padding: 0.75rem 1.4rem; border-radius: var(--radius-sm); border: none; cursor: pointer; text-decoration: none; text-align: center; }
