@@ -543,6 +543,28 @@ require_once __DIR__ . '/includes/header.php';
             <a href="<?= SITE_URL ?>/que-hace-un-gasfiter-certificado-sec" class="btn btn-outline btn-sm" aria-label="Leer guía sobre qué hace un gasfiter certificado SEC">Leer Guía Completa &rarr;</a>
           </div>
         </article>
+
+        <article class="blog-card">
+          <a href="<?= SITE_URL ?>/gasfiter-certificado-sec-vitacura" style="display:block; overflow:hidden;" aria-label="Guía de gasfiter SEC en Vitacura y sector oriente">
+            <img src="<?= SITE_URL ?>/blog/asfiter-certificado-sec-vitacura.png" alt="Gásfiter certificado SEC en Vitacura y sector oriente" width="400" height="225" style="width:100%; height:200px; object-fit:cover; display:block;" loading="lazy">
+          </a>
+          <div class="blog-body">
+            <div class="blog-date">15 de Enero de 2026</div>
+            <h3 class="blog-heading">
+              <a href="<?= SITE_URL ?>/gasfiter-certificado-sec-vitacura">Gasfiter Certificado SEC en Vitacura</a>
+            </h3>
+            <p class="blog-text">
+              Soluciones para residencias de alto estándar: detección no destructiva en pisos nobles y regularización de Sello Rojo en condominios.
+            </p>
+            <a href="<?= SITE_URL ?>/gasfiter-certificado-sec-vitacura" class="btn btn-outline btn-sm" aria-label="Leer guía sobre gasfiter certificado SEC en Vitacura">Leer Guía Completa &rarr;</a>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 2.75rem;">
+        <a href="<?= SITE_URL ?>/blog" class="btn btn-primary btn-lg" aria-label="Visitar el portal completo del blog de Instalgas Chile">
+          <span>Explorar Todas las Guías del Blog &rarr;</span>
+        </a>
       </div>
     </div>
   </section>

@@ -27,7 +27,7 @@ $seo_config = [
     'faqs' => $article_faqs,
     'breadcrumbs' => [
         ['name' => 'Inicio', 'url' => SITE_URL . '/'],
-        ['name' => 'Blog', 'url' => SITE_URL . '/#blog'],
+        ['name' => 'Blog', 'url' => SITE_URL . '/blog'],
         ['name' => 'Qué Hace un Gasfiter SEC', 'url' => SITE_URL . '/que-hace-un-gasfiter-certificado-sec']
     ]
 ];
@@ -39,7 +39,7 @@ require_once __DIR__ . '/includes/header.php';
   <div class="container breadcrumbs" aria-label="Migas de pan">
     <a href="<?= SITE_URL ?>/">Inicio</a>
     <span>&rsaquo;</span>
-    <a href="<?= SITE_URL ?>/#blog">Blog</a>
+    <a href="<?= SITE_URL ?>/blog">Blog</a>
     <span>&rsaquo;</span>
     <strong>¿Qué Hace un Gásfiter Certificado SEC?</strong>
   </div>

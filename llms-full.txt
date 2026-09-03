@@ -76,3 +76,13 @@ En la República de Chile, toda intervención en instalaciones de gas se rige po
 - Enlace WhatsApp directo: https://wa.me/56949877316
 - Número telefónico: +56 9 4987 7316
 - URL Oficial: https://instalgaschile.cl
+
+---
+
+## 6. Portal de Blog y Guías Técnicas
+- [Portal Principal del Blog](https://instalgaschile.cl/blog): Artículos y guías de seguridad en gas reguladas por la SEC.
+- [Gasfiter Certificado SEC vs No Certificado](https://instalgaschile.cl/diferencia-gasfiter-certificado-y-no-certificado): Diferencias críticas, marco normativo, anulación de seguros y riesgos fatales.
+- [Cómo Verificar si un Gasfiter es Certificado SEC](https://instalgaschile.cl/como-verificar-gasfiter-certificado-sec): Consulta pública de RUT, credencial oficial y validación QR del Gobierno de Chile.
+- [¿Qué Hace un Gasfiter Certificado SEC?](https://instalgaschile.cl/que-hace-un-gasfiter-certificado-sec): Atribuciones del Decreto Supremo N° 191 (Clase 3), montaje de redes de cobre (DS 66) y Sello Verde.
+- [Gasfiter Certificado SEC en Vitacura y Zona Oriente](https://instalgaschile.cl/gasfiter-certificado-sec-vitacura): Procedimientos de alta precisión para viviendas de alto estándar, detección no destructiva de fugas en pisos nobles y regularización en condominios.
+

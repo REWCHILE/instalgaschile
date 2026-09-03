@@ -19,6 +19,17 @@ function render_seo_meta($config = []) {
     $faqs = $config['faqs'] ?? [];
     $breadcrumbs = $config['breadcrumbs'] ?? [];
     $service_schema = $config['service'] ?? null;
+
+    // Garantizar URL absoluta para Open Graph
+    if (!preg_match('~^https?://~i', $image)) {
+        $image = rtrim(SITE_URL, '/') . '/' . ltrim($image, '/');
+    }
+    // Determinar formato MIME de la imagen para Facebook Debugger
+    $img_ext = strtolower(pathinfo(parse_url($image, PHP_URL_PATH), PATHINFO_EXTENSION));
+    $image_mime = ($img_ext === 'png') ? 'image/png' : (($img_ext === 'webp') ? 'image/webp' : 'image/jpeg');
+    
+    // URL Segura HTTPS para WhatsApp / Facebook
+    $image_secure = preg_replace('~^http://~i', 'https://', $image);
     ?>
     <!-- Metadatos Básicos y SEO On-Page -->
     <title><?= htmlspecialchars($title) ?></title>
@@ -36,7 +47,8 @@ function render_seo_meta($config = []) {
     <meta property="og:url" content="<?= htmlspecialchars($canonical) ?>">
     <meta property="og:site_name" content="<?= htmlspecialchars(SITE_NAME) ?>">
     <meta property="og:image" content="<?= htmlspecialchars($image) ?>">
-    <meta property="og:image:secure_url" content="<?= htmlspecialchars($image) ?>">
+    <meta property="og:image:secure_url" content="<?= htmlspecialchars($image_secure) ?>">
+    <meta property="og:image:type" content="<?= $image_mime ?>">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="<?= htmlspecialchars($title) ?>">

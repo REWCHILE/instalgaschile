@@ -6,7 +6,19 @@ if (!defined('SITE_NAME')) {
     require_once __DIR__ . '/config.php';
 }
 
-$current_page = basename($_SERVER['PHP_SELF'], '.php');
+$request_path = trim(parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH), '/');
+$path_segment = explode('/', $request_path)[0] ?? '';
+
+if ($path_segment === 'blog') {
+    $current_page = 'blog';
+} elseif (!empty($path_segment)) {
+    $current_page = basename($path_segment, '.php');
+} else {
+    $current_page = basename($_SERVER['PHP_SELF'] ?? '', '.php');
+    if ($current_page === '' || $current_page === 'index') {
+        $current_page = 'index';
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="es-CL">
@@ -160,6 +172,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
         <a href="<?= SITE_URL ?>/certificacion-sec" class="nav-link <?= ($current_page == 'certificacion-sec') ? 'active' : '' ?>">Certificación SEC</a>
         <a href="<?= SITE_URL ?>/deteccion-fugas-gas" class="nav-link <?= ($current_page == 'deteccion-fugas-gas') ? 'active' : '' ?>">Detección de Fugas</a>
         <a href="<?= SITE_URL ?>/servicios" class="nav-link <?= ($current_page == 'servicios') ? 'active' : '' ?>">Servicios</a>
+        <a href="<?= SITE_URL ?>/blog" class="nav-link <?= (in_array($current_page, ['blog', 'como-verificar-gasfiter-certificado-sec', 'diferencia-gasfiter-certificado-y-no-certificado', 'que-hace-un-gasfiter-certificado-sec', 'gasfiter-certificado-sec-vitacura'])) ? 'active' : '' ?>">Blog</a>
         <a href="<?= SITE_URL ?>/contacto" class="nav-link <?= ($current_page == 'contacto') ? 'active' : '' ?>">Contacto</a>
       </nav>
 

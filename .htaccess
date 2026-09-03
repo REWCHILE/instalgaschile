@@ -26,6 +26,7 @@ ErrorDocument 404 /404.php
   RewriteRule ^contacto-.*$ /contacto [R=301,L]
   RewriteRule ^sobre-nosotros.*$ /nosotros [R=301,L]
   RewriteRule ^quienes-somos.*$ /nosotros [R=301,L]
+  RewriteRule ^blog/(diferencia-gasfiter-certificado-y-no-certificado|como-verificar-gasfiter-certificado-sec|que-hace-un-gasfiter-certificado-sec|gasfiter-certificado-sec-vitacura)$ /$1 [R=301,L]
 
   # Quitar barra diagonal final si no es un directorio real
   RewriteCond %{REQUEST_FILENAME} !-d

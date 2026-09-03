@@ -55,6 +55,7 @@ if (!defined('SITE_NAME')) {
             <li><a href="<?= SITE_URL ?>/nosotros">Sobre Nosotros</a></li>
             <li><a href="<?= SITE_URL ?>/certificacion-sec">¿Por qué elegir instalador SEC?</a></li>
             <li><a href="<?= SITE_URL ?>/servicios">Catálogo de Servicios</a></li>
+            <li><a href="<?= SITE_URL ?>/blog">Blog y Guías Técnicas</a></li>
             <li><a href="<?= SITE_URL ?>/contacto">Contacto y Presupuestos</a></li>
             <li><a href="<?= SITE_URL ?>/sitemap.xml">Mapa del Sitio (Sitemap)</a></li>
           </ul>

@@ -22,6 +22,15 @@ if (isset($legacyRedirects[$trimmed])) {
     exit;
 }
 
+// Redireccionar si acceden con /blog/nombre-articulo hacia la URL canónica
+if (preg_match('#^/blog/(.+)#', $trimmed, $matches)) {
+    $articleSlug = $matches[1];
+    if (file_exists(__DIR__ . '/' . $articleSlug . '.php')) {
+        header('Location: /' . $articleSlug, true, 301);
+        exit;
+    }
+}
+
 // Si el archivo estático existe físicamente (imágenes, CSS, JS, etc.), servirlo directamente
 if ($path !== '/' && file_exists($fullPath) && !is_dir($fullPath)) {
     return false;

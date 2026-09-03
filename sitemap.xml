@@ -58,6 +58,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://instalgaschile.cl/blog</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://instalgaschile.cl/assets/img/og-instalgas-share.jpg</image:loc>
+      <image:title>Blog Técnico y Guías de Seguridad en Gas - Instalgas Chile</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://instalgaschile.cl/diferencia-gasfiter-certificado-y-no-certificado</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -71,6 +81,12 @@
   </url>
   <url>
     <loc>https://instalgaschile.cl/que-hace-un-gasfiter-certificado-sec</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://instalgaschile.cl/gasfiter-certificado-sec-vitacura</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
