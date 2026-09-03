@@ -52,11 +52,11 @@ if (!defined('SITE_NAME')) {
           <h3>Navegación Rápida</h3>
           <ul class="footer-links">
             <li><a href="<?= SITE_URL ?>/">Inicio</a></li>
+            <li><a href="<?= SITE_URL ?>/nosotros">Sobre Nosotros</a></li>
             <li><a href="<?= SITE_URL ?>/certificacion-sec">¿Por qué elegir instalador SEC?</a></li>
             <li><a href="<?= SITE_URL ?>/servicios">Catálogo de Servicios</a></li>
             <li><a href="<?= SITE_URL ?>/contacto">Contacto y Presupuestos</a></li>
             <li><a href="<?= SITE_URL ?>/sitemap.xml">Mapa del Sitio (Sitemap)</a></li>
-            <li><a href="<?= SITE_URL ?>/llms.txt">Ficha para Motores IA (llms.txt)</a></li>
           </ul>
         </div>
 

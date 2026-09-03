@@ -26,6 +26,16 @@
     </image:image>
   </url>
   <url>
+    <loc>https://instalgaschile.cl/nosotros</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://instalgaschile.cl/assets/img/domingo-isain-plaza.webp</image:loc>
+      <image:title>Domingo Isaín Plaza Caamaño - Instalador Autorizado SEC Clase 3</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://instalgaschile.cl/deteccion-fugas-gas</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>

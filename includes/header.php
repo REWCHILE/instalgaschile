@@ -151,6 +151,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
       <!-- Menú de navegación accesible sin extensión .php -->
       <nav id="navMenu" class="nav-menu" role="navigation" aria-label="Menú principal">
         <a href="<?= SITE_URL ?>/" class="nav-link <?= ($current_page == 'index' || $current_page == '') ? 'active' : '' ?>">Inicio</a>
+        <a href="<?= SITE_URL ?>/nosotros" class="nav-link <?= ($current_page == 'nosotros') ? 'active' : '' ?>">Nosotros</a>
         <a href="<?= SITE_URL ?>/certificacion-sec" class="nav-link <?= ($current_page == 'certificacion-sec') ? 'active' : '' ?>">Certificación SEC</a>
         <a href="<?= SITE_URL ?>/deteccion-fugas-gas" class="nav-link <?= ($current_page == 'deteccion-fugas-gas') ? 'active' : '' ?>">Detección de Fugas</a>
         <a href="<?= SITE_URL ?>/servicios" class="nav-link <?= ($current_page == 'servicios') ? 'active' : '' ?>">Servicios</a>

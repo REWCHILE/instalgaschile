@@ -27,9 +27,10 @@ if ($path !== '/' && file_exists($fullPath) && !is_dir($fullPath)) {
     return false;
 }
 
-// Si existe la versión con .php, servirla
-if ($path !== '/' && file_exists($fullPath . '.php')) {
-    require $fullPath . '.php';
+// Si existe la versión con .php, servirla (soportando barra final)
+$cleanPath = rtrim($path, '/');
+if ($cleanPath !== '' && file_exists(__DIR__ . $cleanPath . '.php')) {
+    require __DIR__ . $cleanPath . '.php';
     return true;
 }
 
