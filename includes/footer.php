@@ -16,7 +16,7 @@ if (!defined('SITE_NAME')) {
             <img src="<?= SITE_URL ?>/assets/img/logo-instalgas.webp" alt="Sello Gásfiter Certificado SEC Instalgas Chile" width="50" height="50" loading="lazy" style="border-radius:50%;">
             <div class="brand-text">
               <span class="brand-title" style="color:#ffffff;">INSTALGAS <span style="color:#f87171;">CHILE</span></span>
-              <span class="brand-subtitle" style="color:#34d399;">Autorizado SEC DS 66</span>
+              <span class="brand-subtitle" style="color:#34d399;">Autorizado SEC DS 191</span>
             </div>
           </div>
           <p style="font-size:0.9rem; color:#94a3b8; line-height:1.6;">

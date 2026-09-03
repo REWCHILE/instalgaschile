@@ -28,7 +28,7 @@ $sec_faqs = [
 $seo_config = [
     'title' => 'Certificación SEC y Sello Verde de Gas en Santiago | Instalgas Chile',
     'description' => 'Regularización de Sello Rojo y Amarillo ante la SEC. Obtenga su Sello Verde con el instalador autorizado Domingo Isaín. Proyectos TC6 y hermeticidad.',
-    'keywords' => 'sello verde sec santiago, regularizar sello rojo gas, certificacion sec gas chile, inspeccion periodica gas ds 66, instalador sec clase 1 santiago, tc6 gas chile',
+    'keywords' => 'sello verde sec santiago, regularizar sello rojo gas, certificacion sec gas chile, inspeccion periodica gas ds 66, instalador sec clase 3 santiago, tc6 gas chile',
     'canonical' => SITE_URL . '/certificacion-sec',
     'image' => SITE_URL . '/assets/img/certificacion-sello-verde-sec.jpg',
     'type' => 'article',
@@ -67,12 +67,12 @@ require_once __DIR__ . '/includes/header.php';
     <div class="container">
       <div class="hero-grid" style="align-items: center;">
         <div>
-          <span class="section-badge">Normativa DS 66 • Ministerio de Economía</span>
+          <span class="section-badge">Normativa DS 191 • DS 66 • DS 222 • DS 20 • DS 67</span>
           <h1 id="sec-landing-title" style="color: var(--primary-blue); margin-bottom: 1.25rem;">
             Regularización y Obtención de <span style="color: var(--sec-green-dark);">Sello Verde SEC</span> en Santiago
           </h1>
           <p style="font-size: 1.15rem; line-height: 1.6; color: var(--text-muted); margin-bottom: 1.75rem;">
-            ¿Su edificio, casa o local comercial recibió <strong>Sello Rojo</strong> o <strong>Sello Amarillo</strong>? Evite el corte de suministro de Metrogas o Lipigas. Regularizamos cada observación técnica con respaldo oficial del instalador certificado <strong>Domingo Isaín Plaza Caamaño</strong> (RUT: 12.738.961-6).
+            ¿Su edificio, casa o local comercial recibió <strong>Sello Rojo</strong> o <strong>Sello Amarillo</strong>? Evite el corte de suministro de Metrogas o Lipigas. Regularizamos cada observación técnica con respaldo oficial del instalador autorizado SEC Clase 3 <strong>Domingo Isaín Plaza Caamaño</strong> (RUT: 12.738.961-6, regulado bajo DS 191).
           </p>
           <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
             <a href="<?= get_whatsapp_url('Hola Domingo Isaín, necesito regularizar mi instalación para obtener Sello Verde SEC.') ?>" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
@@ -109,7 +109,7 @@ require_once __DIR__ . '/includes/header.php';
           </div>
           <h3 style="font-size:1.3rem;">Instalación Aprobada</h3>
           <p class="service-desc">
-            Indica que la red de cañerías, uniones, ventilaciones y artefactos cumplen estrictamente las normativas de seguridad del DS 66. Garantiza tranquilidad y total cobertura ante seguros.
+            Indica que la red de cañerías, uniones, ventilaciones y artefactos cumplen estrictamente las normativas de seguridad del DS 66, DS 222 y DS 20. Garantiza tranquilidad y total cobertura ante seguros.
           </p>
           <div style="color:var(--sec-green-dark); font-weight:700; font-size:0.9rem;">
             &check; Aprobado para suministro continuo sin restricciones.
@@ -124,10 +124,10 @@ require_once __DIR__ . '/includes/header.php';
           </div>
           <h3 style="font-size:1.3rem;">Con Observaciones Menores</h3>
           <p class="service-desc">
-            Presenta anomalías que no constituyen peligro inminente, pero que deben repararse en el plazo estipulado. Si no se subsana, pasa automáticamente a Sello Rojo.
+            Existen anomalías no críticas (como falta de ventilación inferior/superior, llaves de paso antiguas o artefactos descalibrados). Si no se subsana en el plazo otorgado, pasa automáticamente a Sello Rojo.
           </p>
           <div style="color:#b45309; font-weight:700; font-size:0.9rem;">
-            &excl; Requiere corrección técnica antes del vencimiento.
+            &excl; Requiere regularización antes del vencimiento del plazo.
           </div>
         </article>
 
@@ -135,14 +135,14 @@ require_once __DIR__ . '/includes/header.php';
         <article class="service-card" style="border-top: 5px solid var(--accent-red);">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
             <span style="background:#fef2f2; color:var(--accent-red); font-weight:800; padding:0.4rem 0.9rem; border-radius:var(--radius-sm); font-size:0.9rem;">SELLO ROJO</span>
-            <span style="font-size:0.85rem; color:var(--accent-red); font-weight:600;">Riesgo Inminente</span>
+            <span style="font-size:0.85rem; color:var(--accent-red); font-weight:600;">Peligro Inminente</span>
           </div>
-          <h3 style="font-size:1.3rem;">Rechazado por Defectos Críticos</h3>
+          <h3 style="font-size:1.3rem;">Instalación Rechazada</h3>
           <p class="service-desc">
-            Existe fuga activa, falta grave de ventilación o artefactos en recintos prohibidos. La empresa distribuidora tiene la obligación legal de cortar el gas para evitar accidentes fatales.
+            Presencia de fuga de gas activa, monóxido de carbono en concentraciones peligrosas o instalación fuera de norma. Implica el corte inmediato del medidor por parte de Metrogas o Lipigas.
           </p>
           <div style="color:var(--accent-red); font-weight:700; font-size:0.9rem;">
-            &cross; Requiere intervención urgente con instalador SEC.
+            &cross; Corte de gas obligatorio. Requiere reparación y reinspección urgente.
           </div>
         </article>
       </div>
@@ -161,25 +161,25 @@ require_once __DIR__ . '/includes/header.php';
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
         <div style="background:#ffffff; padding:1.75rem; border-radius:var(--radius-md); border:1px solid var(--border-color); box-shadow:var(--shadow-sm);">
           <div style="width:40px; height:40px; border-radius:50%; background:var(--primary-blue); color:#ffffff; display:flex; align-items:center; justify-content:center; font-weight:800; margin-bottom:1rem;">1</div>
-          <h4 style="font-size:1.15rem; margin-bottom:0.5rem;">Diagnóstico en Terreno</h4>
+          <h3 style="font-size:1.15rem; margin-bottom:0.5rem;">Diagnóstico en Terreno</h3>
           <p style="font-size:0.9rem; color:var(--text-muted);">Revisión visual y prueba manométrica de hermeticidad para cotejar las observaciones del informe de inspección.</p>
         </div>
 
         <div style="background:#ffffff; padding:1.75rem; border-radius:var(--radius-md); border:1px solid var(--border-color); box-shadow:var(--shadow-sm);">
           <div style="width:40px; height:40px; border-radius:50%; background:var(--primary-blue); color:#ffffff; display:flex; align-items:center; justify-content:center; font-weight:800; margin-bottom:1rem;">2</div>
-          <h4 style="font-size:1.15rem; margin-bottom:0.5rem;">Subsanación de Anomalías</h4>
+          <h3 style="font-size:1.15rem; margin-bottom:0.5rem;">Subsanación de Anomalías</h3>
           <p style="font-size:0.9rem; color:var(--text-muted);">Reparación de fugas (con gas trazador o Prodoral R6-1 sin demoler), corrección de ventilaciones y reemplazo de ductos no normados.</p>
         </div>
 
         <div style="background:#ffffff; padding:1.75rem; border-radius:var(--radius-md); border:1px solid var(--border-color); box-shadow:var(--shadow-sm);">
           <div style="width:40px; height:40px; border-radius:50%; background:var(--primary-blue); color:#ffffff; display:flex; align-items:center; justify-content:center; font-weight:800; margin-bottom:1rem;">3</div>
-          <h4 style="font-size:1.15rem; margin-bottom:0.5rem;">Informe Técnico y TC6</h4>
-          <p style="font-size:0.9rem; color:var(--text-muted);">El instalador Domingo Isaín (SEC 12.738.961-6) suscribe el informe de conformidad técnica y documentación para la entidad acreditada.</p>
+          <h3 style="font-size:1.15rem; margin-bottom:0.5rem;">Informe Técnico y TC6</h3>
+          <p style="font-size:0.9rem; color:var(--text-muted);">El instalador Domingo Isaín (SEC Clase 3 RUT: 12.738.961-6) suscribe el informe de conformidad técnica y documentación para la entidad acreditada.</p>
         </div>
 
         <div style="background:#ffffff; padding:1.75rem; border-radius:var(--radius-md); border:1px solid var(--border-color); box-shadow:var(--shadow-sm);">
           <div style="width:40px; height:40px; border-radius:50%; background:var(--sec-green-dark); color:#ffffff; display:flex; align-items:center; justify-content:center; font-weight:800; margin-bottom:1rem;">4</div>
-          <h4 style="font-size:1.15rem; margin-bottom:0.5rem;">Reinspección y Sello Verde</h4>
+          <h3 style="font-size:1.15rem; margin-bottom:0.5rem;">Reinspección y Sello Verde</h3>
           <p style="font-size:0.9rem; color:var(--text-muted);">Se coordina la reinspección con el organismo certificador y se entrega el Sello Verde oficial adherido y registrado ante la SEC.</p>
         </div>
       </div>

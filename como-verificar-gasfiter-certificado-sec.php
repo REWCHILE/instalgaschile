@@ -12,15 +12,15 @@ $article_faqs = [
         'answer' => 'Puede ingresar directamente al portal oficial de la Superintendencia de Electricidad y Combustibles en www.sec.cl en la sección "Instaladores Autorizados", e ingresar el RUT o nombre del técnico para corroborar su vigencia y clase.'
     ],
     [
-        'question' => '¿Qué clase de instalador SEC se requiere para edificios o comercios?',
-        'answer' => 'Para edificios colectivos, industrias y grandes instalaciones se requiere un Instalador de Gas Clase 1 (máxima categoría legal), como Domingo Isaín Plaza Caamaño, quien está facultado para diseñar, ejecutar y tramitar proyectos sin límite de potencia.'
+        'question' => '¿Qué categorías de instalador de gas existen en Chile y qué alcance tienen?',
+        'answer' => 'Bajo el Decreto Supremo N° 191 (DS 191), la SEC clasifica a los instaladores en Clase 1, Clase 2 y Clase 3. La licencia Clase 3 habilita formalmente a profesionales como Domingo Isaín Plaza Caamaño para ejecutar, reparar, modificar y certificar instalaciones interiores de gas en casas, departamentos y locales comerciales según los decretos DS 66, DS 222 y DS 20.'
     ]
 ];
 
 $seo_config = [
     'title' => 'Cómo Verificar si un Gasfiter es Certificado SEC en Chile | Guía Oficial',
-    'description' => 'Aprenda a consultar el registro público de la SEC, validar el código QR de la credencial y comprobar la vigencia del técnico antes de permitir trabajos en su hogar.',
-    'keywords' => 'como verificar gasfiter certificado sec, registro instaladores sec chile, consultar rut instalador sec, carnet instalador gas sec',
+    'description' => 'Aprenda a consultar el registro público de la SEC (DS 191), validar el código QR de la credencial y comprobar la vigencia del técnico Clase 3.',
+    'keywords' => 'como verificar gasfiter certificado sec, registro instaladores sec chile, consultar rut instalador sec, carnet instalador gas sec, decreto supremo 191 sec',
     'canonical' => SITE_URL . '/como-verificar-gasfiter-certificado-sec',
     'image' => SITE_URL . '/blog/verificar-gasfiter-certificado-sec.png',
     'type' => 'article',
@@ -46,11 +46,11 @@ require_once __DIR__ . '/includes/header.php';
 
   <article class="section" style="padding-top: 1.5rem;">
     <div class="container" style="max-width: 860px;">
-      <span class="section-badge">Verificación y Transparencia</span>
+      <span class="section-badge">Verificación y Transparencia • DS 191</span>
       <h1 style="margin-bottom: 1.25rem;">Cómo Verificar si un Gasfiter es Certificado por la SEC: Paso a Paso</h1>
       
       <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1.5rem; padding-bottom:1rem; border-bottom:1px solid var(--border-color); font-size:0.9rem; color:var(--text-muted);">
-        <span>Por <strong><?= DIRECTOR_NAME ?></strong> (Instalador Autorizado SEC Clase 1)</span>
+        <span>Por <strong><?= DIRECTOR_NAME ?></strong> (Instalador Autorizado SEC Clase 3 • DS 191)</span>
         <span>•</span>
         <time datetime="2026-01-07">7 de Enero de 2026</time>
       </div>

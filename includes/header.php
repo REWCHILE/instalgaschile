@@ -85,7 +85,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
     <div class="container top-bar-content">
       <div class="top-badge-sec">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        <span>Instalador Autorizado SEC Clase 1 • RUT: <?= DIRECTOR_RUT ?></span>
+        <span>Instalador Autorizado SEC Clase 3 • RUT: <?= DIRECTOR_RUT ?></span>
       </div>
       <div class="top-emergency-contact">
         <a href="tel:+<?= PHONE_RAW ?>" class="top-phone-link" aria-label="Llamar a nuestra central de emergencias al <?= PHONE_DISPLAY ?>">

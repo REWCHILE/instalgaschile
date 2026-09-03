@@ -115,7 +115,7 @@ require_once __DIR__ . '/includes/header.php';
             <div style="margin-top:2rem; padding-top:1.5rem; border-top:1px solid var(--border-color);">
               <div style="font-size:0.85rem; color:#64748b; margin-bottom:0.5rem;">INSTALADOR A CARGO:</div>
               <div style="font-weight:700; color:var(--primary-blue); font-size:1.1rem;"><?= DIRECTOR_NAME ?></div>
-              <div style="font-size:0.9rem; color:var(--accent-red); font-weight:600;">RUT: <?= DIRECTOR_RUT ?> • Certificado SEC Clase 1</div>
+              <div style="font-size:0.9rem; color:var(--accent-red); font-weight:600;">RUT: <?= DIRECTOR_RUT ?> • Certificado SEC Clase 3 (DS 191)</div>
             </div>
           </div>
         </div>

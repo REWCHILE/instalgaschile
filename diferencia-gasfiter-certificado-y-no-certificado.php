@@ -50,7 +50,7 @@ require_once __DIR__ . '/includes/header.php';
       <h1 style="margin-bottom: 1.25rem;">Gasfiter Certificado SEC vs Gasfiter No Certificado: La Diferencia entre Seguridad y Peligro</h1>
       
       <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1.5rem; padding-bottom:1rem; border-bottom:1px solid var(--border-color); font-size:0.9rem; color:var(--text-muted);">
-        <span>Por <strong><?= DIRECTOR_NAME ?></strong> (Instalador Autorizado SEC Clase 1)</span>
+        <span>Por <strong><?= DIRECTOR_NAME ?></strong> (Instalador Autorizado SEC Clase 3 • DS 191)</span>
         <span>•</span>
         <time datetime="2026-01-07">7 de Enero de 2026</time>
       </div>
@@ -65,13 +65,13 @@ require_once __DIR__ . '/includes/header.php';
         </p>
 
         <h2 style="font-size:1.6rem; margin-top:2rem; margin-bottom:1rem; color:var(--primary-blue);">
-          1. Habilitación Legal y Decreto Supremo N° 66
+          1. Habilitación Legal: Decreto Supremo N° 191 y Norma Técnica DS 66
         </h2>
         <p>
-          La <strong>Superintendencia de Electricidad y Combustibles (SEC)</strong> exige que cualquier intervención en redes de gas licuado (GLP) o gas natural (GN) sea realizada exclusivamente por técnicos que hayan rendido y aprobado los exámenes de competencia técnica ante organismos autorizados por el Estado.
+          El <strong>Decreto Supremo N° 191</strong> de la Superintendencia de Electricidad y Combustibles (SEC) regula formalmente a los instaladores de gas y servicios técnicos en Chile, exigiendo que cualquier intervención en redes de gas licuado (GLP) o gas natural (GN) sea realizada exclusivamente por técnicos con licencia oficial otorgada tras rendir exámenes de competencia técnica. A su vez, el <strong>Decreto Supremo N° 66</strong> fija los requisitos técnicos y de seguridad de las instalaciones interiores.
         </p>
         <p>
-          Un gásfiter certificado cuenta con un carnet oficial con RUT y registro público. Por el contrario, un gásfiter no certificado opera en la ilegalidad, lo que invalida cualquier reclamo ante Metrogas, Lipigas o las aseguradoras del hogar.
+          Un gásfiter certificado cuenta con un carnet oficial con RUT y registro público bajo el DS 191. Por el contrario, un gásfiter no certificado opera en la ilegalidad, lo que invalida cualquier reclamo ante Metrogas, Lipigas o las aseguradoras del hogar.
         </p>
 
         <h2 style="font-size:1.6rem; margin-top:2rem; margin-bottom:1rem; color:var(--primary-blue);">

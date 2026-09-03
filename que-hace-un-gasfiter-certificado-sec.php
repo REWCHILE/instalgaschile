@@ -50,7 +50,7 @@ require_once __DIR__ . '/includes/header.php';
       <h1 style="margin-bottom: 1.25rem;">¿Qué Hace un Gasfiter Certificado por la SEC y Cuándo Debe Contratarlo?</h1>
       
       <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1.5rem; padding-bottom:1rem; border-bottom:1px solid var(--border-color); font-size:0.9rem; color:var(--text-muted);">
-        <span>Por <strong><?= DIRECTOR_NAME ?></strong> (Instalador Autorizado SEC Clase 1)</span>
+        <span>Por <strong><?= DIRECTOR_NAME ?></strong> (Instalador Autorizado SEC Clase 3 • DS 191)</span>
         <span>•</span>
         <time datetime="2026-01-07">7 de Enero de 2026</time>
       </div>
@@ -65,12 +65,24 @@ require_once __DIR__ . '/includes/header.php';
         </p>
 
         <h2 style="font-size:1.6rem; margin-top:2rem; margin-bottom:1rem; color:var(--primary-blue);">
-          Principales Responsabilidades de un Instalador SEC
+          Marco Legal y Normativo: Decretos Supremos Clave
+        </h2>
+        <p>
+          El ejercicio de la profesión y la seguridad de las instalaciones de gas en Chile se rigen por un marco normativo riguroso:
+        </p>
+        <ul style="display:flex; flex-direction:column; gap:0.6rem; margin-bottom:1.5rem; font-size:1rem;">
+          <li>&bull; <strong>Decreto Supremo N° 191 (DS 191):</strong> Regula las licencias, deberes y clasificación de los <em>Instaladores de Gas</em> ante la SEC (Clase 1, 2 y 3).</li>
+          <li>&bull; <strong>Decretos Supremos N° 66, N° 222 y N° 20:</strong> Normativas oficiales que regulan el diseño, ejecución y seguridad de las <em>Instalaciones Interiores de Gas Domiciliarias y Comerciales</em>, artefactos de consumo y ventilaciones.</li>
+          <li>&bull; <strong>Decreto Supremo N° 67 (DS 67):</strong> Reglamenta las <em>Instalaciones de Gas de Red (Exterior)</em> y matrices pertenecientes a las empresas distribuidoras y abastecedoras (Metrogas, Lipigas, Gasco, Abastible), con las cuales el instalador coordina el empalme y puesta en servicio.</li>
+        </ul>
+
+        <h2 style="font-size:1.6rem; margin-top:2rem; margin-bottom:1rem; color:var(--primary-blue);">
+          Principales Responsabilidades de un Instalador SEC Clase 3
         </h2>
 
         <div style="display:grid; grid-template-columns:1fr; gap:1.25rem; margin:1.5rem 0;">
           <div style="background:#ffffff; border:1px solid var(--border-color); padding:1.25rem; border-radius:var(--radius-md); box-shadow:var(--shadow-sm);">
-            <h3 style="color:var(--primary-blue); font-size:1.2rem; margin-bottom:0.4rem;">1. Diseño y Montaje de Redes en Cobre (DS 66)</h3>
+            <h3 style="color:var(--primary-blue); font-size:1.2rem; margin-bottom:0.4rem;">1. Diseño y Montaje de Redes en Cobre (DS 66, DS 222 y DS 20)</h3>
             <p style="font-size:0.95rem; color:var(--text-muted); margin-bottom:0;">Calcula caudales, pérdidas de carga, diámetros de cañerías y ejecuta soldaduras fuertes con aleación de plata conforme a la norma oficial.</p>
           </div>
 
@@ -91,7 +103,7 @@ require_once __DIR__ . '/includes/header.php';
         </div>
 
         <p>
-          En <strong>Instalgas Chile</strong>, bajo la dirección de <strong><?= DIRECTOR_NAME ?></strong>, combinamos más de 40 años de oficio con el rigor técnico y la máxima acreditación legal para que su hogar y su familia estén 100% protegidos.
+          En <strong>Instalgas Chile</strong>, bajo la dirección de <strong><?= DIRECTOR_NAME ?></strong>, combinamos más de 40 años de oficio con el rigor técnico y la acreditación oficial SEC para que su hogar y su familia estén 100% protegidos.
         </p>
 
         <div style="text-align:center; margin-top:2.5rem;">

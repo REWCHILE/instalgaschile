@@ -17,7 +17,7 @@ define('SITE_SLOGAN', 'Instalador de Gas Certificado SEC y Detección de Fugas')
 define('LEGAL_NAME', 'Instalgaschile SpA');
 define('DIRECTOR_NAME', 'Domingo Isaín Plaza Caamaño');
 define('DIRECTOR_RUT', '12.738.961-6');
-define('DIRECTOR_SEC', 'Instalador Autorizado SEC Clase 1');
+define('DIRECTOR_SEC', 'Instalador Autorizado SEC Clase 3');
 
 // Canales de Contacto Directo
 define('PHONE_RAW', '56949877316');

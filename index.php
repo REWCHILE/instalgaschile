@@ -22,7 +22,7 @@ $page_faqs = [
     ],
     [
         'question' => '¿Qué trámite o reparación se realiza para pasar de Sello Rojo o Amarillo a Sello Verde SEC?',
-        'answer' => 'Cuando una entidad inspectora otorga Sello Rojo (peligro inminente) o Sello Amarillo (observaciones con plazo), entregamos el informe técnico detallado. Nuestro instalador SEC Clase 1, Domingo Isaín, subsana cada una de las no conformidades (ventilaciones deficientes, cañerías fuera de norma, artefactos sin conducto de evacuación o fugas), emite el formulario de regularización correspondiente y coordina la reinspección para otorgar el Sello Verde oficial ante la SEC.'
+        'answer' => 'Cuando una entidad inspectora otorga Sello Rojo (peligro inminente) o Sello Amarillo (observaciones con plazo), entregamos el informe técnico detallado. Nuestro instalador SEC Clase 3, Domingo Isaín, subsana cada una de las no conformidades (ventilaciones deficientes, cañerías fuera de norma, artefactos sin conducto de evacuación o fugas), emite el formulario de regularización correspondiente y coordina la reinspección para otorgar el Sello Verde oficial ante la SEC.'
     ],
     [
         'question' => '¿Cuánto tardan en atender una emergencia de fuga o corte de suministro de gas en Santiago?',
@@ -62,7 +62,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="hero-content">
           <div class="hero-tagline">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <span>Instalador Autorizado SEC Clase 1 • Norma DS 66</span>
+            <span>Instalador Autorizado SEC Clase 3 • DS 191 / DS 66</span>
           </div>
           <h1 class="hero-title">
             Gasfiter Certificado SEC en Santiago y Detección de Fugas <span class="highlight">Sin Romper Pisos</span>
@@ -115,7 +115,7 @@ require_once __DIR__ . '/includes/header.php';
                 <div class="credential-name" style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--primary-blue); margin-bottom: 0.2rem;"><?= DIRECTOR_NAME ?></div>
                 <div class="credential-rut">RUT: <?= DIRECTOR_RUT ?></div>
                 <div class="credential-role">
-                  Instalador Autorizado de Gas Clase 1 ante la SEC Chile. Más de 40 años de trayectoria técnica y más de 40.000 servicios ejecutados con éxito.
+                  Instalador Autorizado de Gas Clase 3 ante la SEC Chile. Más de 40 años de trayectoria técnica y más de 40.000 servicios ejecutados con éxito.
                 </div>
               </div>
             </div>
@@ -168,7 +168,7 @@ require_once __DIR__ . '/includes/header.php';
           <ul>
             <li>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <div><strong>Habilitación Legal Plena:</strong> Instalador oficial SEC Clase 1 con carnet vigente y RUT visible (12.738.961-6).</div>
+              <div><strong>Habilitación Legal Plena:</strong> Instalador oficial SEC Clase 3 con carnet vigente y RUT visible (12.738.961-6).</div>
             </li>
             <li>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
@@ -194,7 +194,7 @@ require_once __DIR__ . '/includes/header.php';
           <ul>
             <li>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c62828" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-              <div><strong>Ilegalidad y Riesgo de Multas:</strong> No cuenta con registro SEC y transgrede el DS 66.</div>
+              <div><strong>Ilegalidad y Riesgo de Multas:</strong> No cuenta con registro SEC y transgrede el DS 191 (Reglamento de Instaladores de Gas de la SEC).</div>
             </li>
             <li>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c62828" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
@@ -406,7 +406,7 @@ require_once __DIR__ . '/includes/header.php';
         </div>
         <div class="metric-card">
           <div class="metric-number">100%</div>
-          <div class="metric-title">Certificación SEC Vigente (Clase 1)</div>
+          <div class="metric-title">Certificación SEC Vigente (Clase 3)</div>
         </div>
         <div class="metric-card">
           <div class="metric-number highlight">100%</div>
@@ -511,7 +511,7 @@ require_once __DIR__ . '/includes/header.php';
               <a href="<?= SITE_URL ?>/que-hace-un-gasfiter-certificado-sec">¿Qué hace un gasfiter certificado SEC?</a>
             </h3>
             <p class="blog-text">
-              Conozca el campo de acción de un instalador Clase 1: proyectos de cobre DS 66, pruebas de hermeticidad y tramitaciones de Sello Verde.
+              Conozca el campo de acción de un instalador Clase 3: redes interiores de cobre DS 66, pruebas de hermeticidad y tramitaciones de Sello Verde.
             </p>
             <a href="<?= SITE_URL ?>/que-hace-un-gasfiter-certificado-sec" class="btn btn-outline btn-sm">Leer Guía Completa &rarr;</a>
           </div>

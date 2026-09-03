@@ -10,7 +10,7 @@ Sitio web corporativo y plataforma de alta conversión para **Instalgas Chile** 
 - **URLs Limpias sin `.php`:** Configuración mediante `.htaccess` con redirección 301 canónica y reescritura interna. Incluye `router.php` para desarrollo local con `php -S`.
 - **Identidad de Marca y Respaldo SEC:**
   - **Director Técnico:** Domingo Isaín Plaza Caamaño (RUT: `12.738.961-6`).
-  - **Acreditación Oficial:** Instalador Autorizado SEC Clase 1 (Superintendencia de Electricidad y Combustibles de Chile - Decreto Supremo N° 66).
+  - **Acreditación Oficial:** Instalador Autorizado SEC Clase 3 (Regulado por DS 191 de la SEC; ejecución conforme a DS 66, DS 222, DS 20 y coordinación con redes exteriores DS 67).
   - Paleta institucional basada en el logotipo oficial (Azul Seguridad `#0d254c` y Rojo Urgencia `#c62828`).
 - **Conversión Directa hacia WhatsApp:**
   - Botón flotante interactivo con animación de pulso y contador de mensajes.

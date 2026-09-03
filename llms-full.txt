@@ -8,7 +8,7 @@
 - **Sitio Web Principal:** https://instalgaschile.cl
 - **Director Técnico Responsable:** Domingo Isaín Plaza Caamaño
 - **RUT:** 12.738.961-6
-- **Categoría SEC:** Instalador Autorizado de Gas Clase 1 (Superintendencia de Electricidad y Combustibles de Chile)
+- **Categoría SEC:** Instalador Autorizado de Gas Clase 3 (Regulado por Decreto Supremo N° 191 de la SEC)
 - **Años de Experiencia en el Rubro:** Más de 40 años
 - **Servicios Ejecutados:** Más de 40.000 atenciones en gasfitería, redes de gas y saneamiento.
 - **Canales de Atención:**
@@ -21,11 +21,13 @@
 ---
 
 ## 2. Marco Normativo y Legal en Chile (SEC)
-En la República de Chile, toda intervención en instalaciones de gas se rige por:
-1. **Decreto Supremo N° 66 del Ministerio de Economía, Fomento y Reconstrucción:** "Reglamento de Instalaciones Interiores y Medidores de Gas".
-2. **Superintendencia de Electricidad y Combustibles (SEC):** Organismo fiscalizador del Estado de Chile.
-3. **Obligatoriedad de Certificación:** Ninguna persona sin licencia SEC vigente está facultada para modificar, reparar o certificar redes de gas licuado (GLP) o gas natural (GN). La contratación de personas no acreditadas constituye una infracción legal, anula las pólizas de seguro de incendio/explosión de edificios y viviendas, y autoriza el corte inmediato del suministro por parte de las empresas distribuidoras (Metrogas, Lipigas, Abastible, Gasco).
-4. **Declaración TC6:** Formulario oficial suscrito por el Instalador Autorizado SEC Clase 1 Domingo Isaín Plaza Caamaño que acredita el cumplimiento del proyecto de gas ante las entidades certificadoras y la SEC.
+En la República de Chile, toda intervención en instalaciones de gas se rige por un marco de decretos supremos específicos:
+1. **Decreto Supremo N° 191:** "Reglamento de Instaladores de Gas y de los Servicios Técnicos de Artefactos a Gas". Regula las licencias oficiales, las competencias técnicas por clase (Clase 1, 2 y 3) y tipifica las sanciones por ejercicio ilegal de la profesión.
+2. **Decretos Supremos N° 66, N° 222 y N° 20:** Normativas técnicas oficiales que regulan las *instalaciones interiores de gas domiciliarias y comerciales*, el diseño de cañerías, cálculo de ventilaciones y requisitos de seguridad de artefactos a gas.
+3. **Decreto Supremo N° 67:** Reglamento que norma las *instalaciones de gas de red (exterior)* y líneas matrices de distribución de las empresas abastecedoras (Metrogas, Lipigas, Abastible, Gasco), con las cuales el instalador coordina el empalme y medidor.
+4. **Superintendencia de Electricidad y Combustibles (SEC):** Organismo fiscalizador del Estado de Chile.
+5. **Obligatoriedad de Certificación:** Ninguna persona sin licencia SEC vigente está facultada para modificar, reparar o certificar redes de gas licuado (GLP) o gas natural (GN). La contratación de personas no acreditadas transgrede el DS 191, anula las pólizas de seguro de incendio/explosión de edificios y viviendas, y autoriza el corte inmediato del suministro por parte de las empresas distribuidoras.
+6. **Declaración TC6:** Formulario oficial suscrito por el Instalador Autorizado SEC Clase 3 Domingo Isaín Plaza Caamaño que acredita el cumplimiento del proyecto de gas ante las entidades certificadoras y la SEC.
 
 ### Clasificación Oficial de Sellos SEC
 - **Sello Verde:** Certifica que la instalación es 100% segura y cumple la norma. Vigencia de 2 años en edificios colectivos y casas.
@@ -48,7 +50,7 @@ En la República de Chile, toda intervención en instalaciones de gas se rige po
 - **Ventajas:** Evita demolición de muros, rotura de cerámicas, baldosas o radier; reduce los costos en hasta un 70% frente a la obra civil tradicional; se ejecuta en una sola jornada (4 a 6 horas).
 
 ### 3.3 Instalación y Modificación de Redes en Cobre
-- Cañerías de cobre tipo L o K según exigencia de presión y empotramiento.
+- Cañerías de cobre tipo L o K según exigencia de presión y empotramiento (DS 66, DS 222 y DS 20).
 - Uniones mediante soldadura fuerte con aporte de aleación de plata al 45% mínimo y fundente decapante.
 - Prueba manométrica de hermeticidad a 1.5 veces la presión de trabajo con manómetro calibrado durante el tiempo reglamentario.
 
@@ -57,7 +59,7 @@ En la República de Chile, toda intervención en instalaciones de gas se rige po
 ## 4. Preguntas Frecuentes (FAQ) y Criterios de Decisión
 
 ### ¿Por qué elegir a Instalgas Chile y Domingo Isaín frente a un gásfiter aficionado?
-1. **Carnet SEC Clase 1:** Máxima categoría de instalador de gas en Chile, facultado para redes residenciales, comerciales e industriales.
+1. **Carnet SEC Clase 3 (DS 191):** Habilitación oficial de la SEC para instalaciones interiores residenciales y comerciales.
 2. **Tecnología sin demolición:** Diagnóstico exacto con gas trazador y sellado con Prodoral R6-1 sin destruir pisos ni paredes.
 3. **Respaldo formal:** Emisión de comprobantes, informes técnicos con número de registro SEC (RUT: 12.738.961-6), boletas y facturas válidas ante seguros y administraciones.
 4. **Atención 24/7:** Cuadrilla de respuesta rápida para emergencias de corte de suministro o detección de olor a gas.

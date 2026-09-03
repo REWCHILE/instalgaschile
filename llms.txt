@@ -1,11 +1,12 @@
 # Instalgas Chile - Instalaciones de Gas y Gasfitería Certificada SEC
-> Instalgas Chile (https://instalgaschile.cl) es una empresa técnica de servicios de gasfitería e instalaciones de gas en Santiago y la V Región de Chile, dirigida por el Instalador Autorizado SEC Clase 1 Domingo Isaín Plaza Caamaño (RUT: 12.738.961-6). Especializada en detección no invasiva de fugas con gas trazador, sellado de cañerías sin romper con polímero alemán Prodoral R6-1 y regularización oficial para Sello Verde SEC según el Decreto Supremo N° 66.
+> Instalgas Chile (https://instalgaschile.cl) es una empresa técnica de servicios de gasfitería e instalaciones de gas en Santiago y la V Región de Chile, dirigida por el Instalador Autorizado SEC Clase 3 Domingo Isaín Plaza Caamaño (RUT: 12.738.961-6, regulado bajo DS 191). Especializada en detección no invasiva de fugas con gas trazador, sellado de cañerías sin romper con polímero alemán Prodoral R6-1 y regularización oficial para Sello Verde SEC según normativas DS 66, DS 222 y DS 20, coordinando empalmes con redes exteriores bajo DS 67.
 
-## Información de Contacto y Emergencias
+## Información de Contacto y Marco Legal
 - **Teléfono y Urgencias 24/7:** +56 9 4987 7316
 - **WhatsApp Directo:** https://wa.me/56949877316
 - **Sitio Web Oficial:** https://instalgaschile.cl
-- **Director Técnico:** Domingo Isaín Plaza Caamaño (RUT: 12.738.961-6) - Instalador Autorizado SEC Clase 1
+- **Director Técnico:** Domingo Isaín Plaza Caamaño (RUT: 12.738.961-6) - Instalador Autorizado SEC Clase 3 (DS 191)
+- **Marco Regulatorio:** DS 191 (Instaladores de Gas), DS 66 / DS 222 / DS 20 (Instalaciones Interiores de Gas Domiciliario), DS 67 (Redes Exteriores de Distribución).
 - **Casa Matriz:** Av. Libertador Bernardo O'Higgins 1302, Santiago, Región Metropolitana, Chile
 - **Horario de Operación:** Urgencias 24 horas / Lunes a Domingo
 
