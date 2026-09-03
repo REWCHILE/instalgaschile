@@ -77,7 +77,6 @@ img {
 a {
   color: inherit;
   text-decoration: none;
-  transition: color var(--transition-fast);
 }
 
 ul, ol {
@@ -149,7 +148,6 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   gap: 0.4rem;
   color: var(--text-light);
   font-weight: 600;
-  transition: color var(--transition-fast);
 }
 
 .top-phone-link:hover {
@@ -225,7 +223,6 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   color: var(--text-dark);
   padding: 0.5rem 0;
   position: relative;
-  transition: color var(--transition-fast);
 }
 
 .nav-link:hover, .nav-link.active {
@@ -293,7 +290,7 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   border-radius: var(--radius-sm);
   border: none;
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: transform 0.15s ease, background-color 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
   text-align: center;
 }
 
@@ -582,7 +579,7 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   padding: 2rem;
   box-shadow: var(--shadow-md);
   border: 1px solid var(--border-color);
-  transition: all var(--transition-normal);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -597,7 +594,7 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   right: 0;
   height: 4px;
   background: var(--primary-blue);
-  transition: background var(--transition-fast);
+  transition: background-color 0.2s ease;
 }
 
 .service-card:hover {
@@ -620,7 +617,7 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   justify-content: center;
   color: var(--primary-blue);
   margin-bottom: 1.25rem;
-  transition: all var(--transition-fast);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .service-card:hover .service-icon-box {
@@ -720,7 +717,7 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   border-radius: var(--radius-md);
   margin-bottom: 1rem;
   box-shadow: var(--shadow-sm);
-  transition: all var(--transition-fast);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .faq-item.is-open {
@@ -759,16 +756,20 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.35s ease, padding 0.35s ease;
+  transition: max-height 0.35s ease;
   padding: 0 1.5rem;
   color: var(--text-muted);
   font-size: 0.95rem;
   line-height: 1.65;
 }
 
+.faq-answer p {
+  margin: 0;
+  padding-bottom: 1.5rem;
+}
+
 .faq-item.is-open .faq-answer {
-  max-height: 600px;
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  max-height: 800px;
 }
 
 /* Zonas de Cobertura */
@@ -923,7 +924,7 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   align-items: center;
   justify-content: center;
   box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
-  transition: all var(--transition-fast);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-decoration: none;
 }
 
@@ -1170,7 +1171,7 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-sm);
   overflow: hidden;
-  transition: all var(--transition-fast);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
 }

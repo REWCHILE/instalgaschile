@@ -25,41 +25,78 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap">
   </noscript>
 
-  <!-- CSS Crítico en Línea (Above-the-Fold Instantáneo - 0ms bloqueo de LCP/FCP) -->
+  <!-- CSS Crítico en Línea (Above-the-Fold Instantáneo - Cero CLS y 0ms bloqueo de LCP/FCP) -->
   <style>
     :root {
       --primary-blue: #0d254c;
       --primary-blue-dark: #07162e;
       --accent-red: #c62828;
       --sec-green: #10b981;
+      --sec-green-dark: #059669;
       --bg-light: #f8fafc;
       --border-color: #e2e8f0;
       --text-dark: #0f172a;
       --text-muted: #475569;
-      --font-heading: 'Outfit', system-ui, -apple-system, sans-serif;
-      --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-full: 9999px;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: var(--font-body); background-color: var(--bg-light); color: var(--text-dark); line-height: 1.6; }
+    body { font-family: var(--font-body); background-color: var(--bg-light); color: var(--text-dark); line-height: 1.6; -webkit-font-smoothing: antialiased; }
     .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.25rem; }
-    .top-bar { background-color: #07152b; color: #ffffff; font-size: 0.85rem; padding: 0.5rem 0; }
-    .top-bar-content { display: flex; justify-content: space-between; align-items: center; }
-    .top-badge-sec { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: #38bdf8; }
+    
+    /* Top Bar */
+    .top-bar { background-color: #07152b; color: #ffffff; font-size: 0.85rem; padding: 0.5rem 0; min-height: 38px; }
+    .top-bar-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+    .top-badge-sec { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: #38bdf8; text-decoration: none; }
     .top-emergency-contact { display: flex; align-items: center; gap: 1.25rem; }
     .top-phone-link { color: #ffffff; text-decoration: none; display: flex; align-items: center; gap: 0.4rem; font-weight: 600; }
-    .site-header { background: #ffffff; box-shadow: 0 2px 8px rgba(13,37,76,0.08); position: sticky; top: 0; z-index: 100; }
+    
+    /* Header */
+    .site-header { background: #ffffff; box-shadow: 0 2px 8px rgba(13,37,76,0.08); position: sticky; top: 0; z-index: 100; min-height: 70px; }
     .navbar { display: flex; justify-content: space-between; align-items: center; height: 80px; }
     .brand-wrapper { display: flex; align-items: center; gap: 0.85rem; text-decoration: none; }
-    .brand-logo-img { width: 58px; height: 58px; border-radius: 8px; }
+    .brand-logo-img { width: 58px; height: 58px; border-radius: 8px; flex-shrink: 0; }
     .brand-title { font-family: var(--font-heading); font-size: 1.45rem; font-weight: 800; color: var(--primary-blue); line-height: 1.1; }
     .brand-title span { color: var(--accent-red); }
     .brand-subtitle { font-size: 0.75rem; color: #059669; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; display: block; }
-    .hero-section { background: linear-gradient(135deg, #07162e 0%, var(--primary-blue) 100%); color: #ffffff; padding: 3.5rem 0; }
-    .hero-title { font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.25rem; color: #ffffff; }
-    .hero-subtitle { font-size: 1.15rem; color: #cbd5e1; margin-bottom: 2rem; line-height: 1.6; }
-    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; font-family: var(--font-heading); font-weight: 700; border-radius: 8px; text-decoration: none; cursor: pointer; padding: 0.75rem 1.5rem; border: none; }
+    .nav-menu { display: flex; align-items: center; gap: 1.75rem; list-style: none; }
+    .menu-toggle { display: none; background: none; border: none; cursor: pointer; color: var(--primary-blue); }
+    
+    /* Hero - Cero Cambio de Diseño (CLS = 0) */
+    .hero { background: radial-gradient(circle at 80% 20%, #173b75 0%, #0d254c 100%); color: #ffffff; padding: 3.5rem 0 4.5rem; position: relative; overflow: hidden; min-height: 560px; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; align-items: center; position: relative; z-index: 2; }
+    .hero-tagline { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.2); padding: 0.4rem 1rem; border-radius: var(--radius-full); font-size: 0.85rem; font-weight: 600; color: #e2e8f0; margin-bottom: 1.25rem; }
+    .hero-title { font-family: var(--font-heading); font-size: 2.75rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.25rem; color: #ffffff; }
+    .hero-subtitle { font-size: 1.125rem; color: #cbd5e1; margin-bottom: 2rem; line-height: 1.6; }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.25rem; }
+    
+    /* Credencial Card Hero */
+    .hero-credential-wrapper { width: 100%; }
+    .credential-card { background: #ffffff; border-radius: 12px; padding: 1.75rem; box-shadow: 0 10px 25px rgba(0,0,0,0.15); border: 1px solid var(--border-color); color: var(--text-dark); }
+    .credential-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid #e2e8f0; }
+    .sec-stamp { display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(16, 185, 129, 0.12); color: var(--sec-green-dark); font-weight: 800; font-size: 0.8rem; padding: 0.35rem 0.75rem; border-radius: 4px; }
+    .credential-body { display: flex; gap: 1.25rem; align-items: flex-start; margin-bottom: 1rem; }
+    .credential-photo { width: 110px; height: 110px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
+    
+    /* Botones Críticos */
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; font-family: var(--font-heading); font-weight: 700; font-size: 0.95rem; padding: 0.75rem 1.4rem; border-radius: var(--radius-sm); border: none; cursor: pointer; text-decoration: none; text-align: center; }
     .btn-whatsapp { background-color: #25d366; color: #ffffff; }
     .btn-primary { background-color: var(--accent-red); color: #ffffff; }
+    .btn-secondary { background-color: var(--primary-blue); color: #ffffff; }
+    .btn-outline { background: transparent; color: var(--primary-blue); border: 2px solid var(--primary-blue); }
+    .btn-lg { padding: 0.95rem 1.85rem; font-size: 1.1rem; }
+    .btn-sm { padding: 0.4rem 0.85rem; font-size: 0.85rem; }
+    
+    @media (max-width: 991px) {
+      .navbar { height: 70px; }
+      .nav-menu { display: none; }
+      .menu-toggle { display: block; }
+      .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .hero-title { font-size: 2rem; }
+    }
   </style>
 
   <!-- Carga Asíncrona de la Hoja de Estilos Completa -->

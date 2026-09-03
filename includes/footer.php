@@ -124,8 +124,5 @@ if (!defined('SITE_NAME')) {
       <span>WhatsApp SEC</span>
     </a>
   </aside>
-
-  <!-- Script interactivo principal -->
-  <script src="<?= SITE_URL ?>/assets/js/main.js"></script>
 </body>
 </html>
