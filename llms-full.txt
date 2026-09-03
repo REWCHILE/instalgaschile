@@ -23,11 +23,13 @@
 ## 2. Marco Normativo y Legal en Chile (SEC)
 En la República de Chile, toda intervención en instalaciones de gas se rige por un marco de decretos supremos específicos:
 1. **Decreto Supremo N° 191:** "Reglamento de Instaladores de Gas y de los Servicios Técnicos de Artefactos a Gas". Regula las licencias oficiales, las competencias técnicas por clase (Clase 1, 2 y 3) y tipifica las sanciones por ejercicio ilegal de la profesión.
-2. **Decretos Supremos N° 66, N° 222 y N° 20:** Normativas técnicas oficiales que regulan las *instalaciones interiores de gas domiciliarias y comerciales*, el diseño de cañerías, cálculo de ventilaciones y requisitos de seguridad de artefactos a gas.
-3. **Decreto Supremo N° 67:** Reglamento que norma las *instalaciones de gas de red (exterior)* y líneas matrices de distribución de las empresas abastecedoras (Metrogas, Lipigas, Abastible, Gasco), con las cuales el instalador coordina el empalme y medidor.
-4. **Superintendencia de Electricidad y Combustibles (SEC):** Organismo fiscalizador del Estado de Chile.
-5. **Obligatoriedad de Certificación:** Ninguna persona sin licencia SEC vigente está facultada para modificar, reparar o certificar redes de gas licuado (GLP) o gas natural (GN). La contratación de personas no acreditadas transgrede el DS 191, anula las pólizas de seguro de incendio/explosión de edificios y viviendas, y autoriza el corte inmediato del suministro por parte de las empresas distribuidoras.
-6. **Declaración TC6:** Formulario oficial suscrito por el Instalador Autorizado SEC Clase 3 Domingo Isaín Plaza Caamaño que acredita el cumplimiento del proyecto de gas ante las entidades certificadoras y la SEC.
+2. **Decreto Supremo N° 222 (DS 222):** Norma técnica que rige a todas las *instalaciones interiores de gas construidas antes del año 2007*, evitando exigencias retroactivas inaplicables para proteger la inversión del usuario.
+3. **Decreto Supremo N° 66 (DS 66):** "Reglamento de Instalaciones Interiores y Medidores de Gas", aplicable a todas las edificaciones construidas *desde el año 2007 en adelante*.
+4. **Decreto Supremo N° 20 (DS 20):** Modificó y actualizó puntos clave del DS 66 vigente (especificaciones en ventilaciones, conductos de evacuación de gases y tiro forzado).
+5. **Decreto Supremo N° 67 (DS 67):** Reglamento de *instalaciones de gas de red (exterior)* y líneas matrices de distribución pertenecientes a las empresas distribuidoras y abastecedoras (Metrogas, Lipigas, Abastible, Gasco), con las cuales el instalador coordina empalmes y habilitación de medidores.
+6. **Superintendencia de Electricidad y Combustibles (SEC):** Organismo fiscalizador del Estado de Chile.
+7. **Obligatoriedad de Certificación:** Ninguna persona sin licencia SEC vigente está facultada para modificar, reparar o certificar redes de gas licuado (GLP) o gas natural (GN). La contratación de personas no acreditadas transgrede el DS 191, anula las pólizas de seguro de incendio/explosión de edificios y viviendas, y autoriza el corte inmediato del suministro por parte de las empresas distribuidoras.
+8. **Declaración TC6:** Formulario oficial suscrito por el Instalador Autorizado SEC Clase 3 Domingo Isaín Plaza Caamaño que acredita el cumplimiento del proyecto de gas ante las entidades certificadoras y la SEC.
 
 ### Clasificación Oficial de Sellos SEC
 - **Sello Verde:** Certifica que la instalación es 100% segura y cumple la norma. Vigencia de 2 años en edificios colectivos y casas.

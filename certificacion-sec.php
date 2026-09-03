@@ -149,6 +149,51 @@ require_once __DIR__ . '/includes/header.php';
     </div>
   </section>
 
+  <!-- Marco Legal por Año de Construcción: DS 222 vs DS 66 vs DS 20 -->
+  <section class="section" style="background:#ffffff; border-top:1px solid var(--border-color); border-bottom:1px solid var(--border-color);" aria-labelledby="normativa-anos-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Criterio Técnico Oficial SEC</span>
+        <h2 id="normativa-anos-heading">¿Qué Decreto Supremo aplica a su Propiedad?</h2>
+        <p>Un error común de técnicos inexpertos es aplicar normas modernas a construcciones antiguas. En Instalgas Chile defendemos su inversión aplicando el decreto exacto según el año de construcción de su inmueble:</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:1.5rem;">
+        <div style="background:var(--bg-light); padding:1.5rem; border-radius:var(--radius-md); border-left:4px solid var(--primary-blue);">
+          <h3 style="font-weight:800; font-size:1.15rem; color:var(--primary-blue); margin-bottom:0.4rem;">Decreto Supremo N° 222 (SEC)</h3>
+          <div style="font-size:0.85rem; font-weight:700; color:var(--accent-red); margin-bottom:0.75rem;">Para Instalaciones construidas ANTES de 2007</div>
+          <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.5; margin:0;">
+            Aplica a edificios y casas construidos antes de 2007. La SEC establece que deben ser evaluadas bajo el DS 222, protegiendo al propietario de exigencias retroactivas inaplicables y remodelaciones costosas e innecesarias.
+          </p>
+        </div>
+
+        <div style="background:var(--bg-light); padding:1.5rem; border-radius:var(--radius-md); border-left:4px solid var(--sec-green-dark);">
+          <h3 style="font-weight:800; font-size:1.15rem; color:var(--sec-green-dark); margin-bottom:0.4rem;">Decreto Supremo N° 66 (SEC)</h3>
+          <div style="font-size:0.85rem; font-weight:700; color:var(--sec-green-dark); margin-bottom:0.75rem;">Instalaciones Interiores DESDE 2007 en adelante</div>
+          <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.5; margin:0;">
+            Reglamento vigente para el diseño, montaje y mantención de instalaciones interiores domiciliarias y comerciales de gas, medidores, trazado de tuberías y ventilaciones.
+          </p>
+        </div>
+
+        <div style="background:var(--bg-light); padding:1.5rem; border-radius:var(--radius-md); border-left:4px solid #f59e0b;">
+          <h3 style="font-weight:800; font-size:1.15rem; color:#b45309; margin-bottom:0.4rem;">Decreto Supremo N° 20 (SEC)</h3>
+          <div style="font-size:0.85rem; font-weight:700; color:#b45309; margin-bottom:0.75rem;">Modificaciones Actuales al DS 66</div>
+          <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.5; margin:0;">
+            Modificó y actualizó puntos clave del DS 66 vigente, reforzando especificaciones en conductos colectivos de evacuación, tiro forzado y mecanismos de corte de seguridad.
+          </p>
+        </div>
+
+        <div style="background:var(--bg-light); padding:1.5rem; border-radius:var(--radius-md); border-left:4px solid #6366f1;">
+          <h3 style="font-weight:800; font-size:1.15rem; color:#4338ca; margin-bottom:0.4rem;">Decretos DS 67 y DS 191 (SEC)</h3>
+          <div style="font-size:0.85rem; font-weight:700; color:#4338ca; margin-bottom:0.75rem;">Red Exterior y Acreditación de Técnicos</div>
+          <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.5; margin:0;">
+            El <strong>DS 67</strong> norma las redes exteriores y matrices de empresas abastecedoras (Metrogas, Lipigas), mientras que el <strong>DS 191</strong> certifica y regula las licencias de instaladores autorizados como Domingo Isaín Plaza Caamaño (Clase 3).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Proceso de Regularización de Instalgas Chile -->
   <section class="section" aria-labelledby="steps-heading">
     <div class="container">

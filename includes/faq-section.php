@@ -21,7 +21,7 @@ if (!isset($faq_list) || empty($faq_list)) {
         ],
         [
             'question' => '¿Qué trámite o reparación se realiza para pasar de Sello Rojo o Amarillo a Sello Verde SEC?',
-            'answer' => 'Cuando una entidad inspectora otorga Sello Rojo (peligro inminente) o Sello Amarillo (observaciones con plazo), entregamos el informe técnico detallado. Nuestro instalador SEC Clase 3, Domingo Isaín, subsana cada una de las no conformidades (ventilaciones deficientes, cañerías fuera de norma, artefactos sin conducto de evacuación o fugas), emite el formulario de regularización correspondiente y coordina la reinspección para otorgar el Sello Verde oficial ante la SEC.'
+            'answer' => 'Cuando una entidad inspectora otorga Sello Rojo (peligro inminente) o Sello Amarillo (observaciones con plazo), entregamos el informe técnico detallado. Nuestro instalador SEC Clase 3, Domingo Isaín, subsana cada no conformidad aplicando el marco normativo correspondiente según el año de su propiedad (Decreto 222 para construcciones anteriores a 2007, o Decreto 66 con modificaciones del Decreto 20 para inmuebles desde 2007 a la fecha), emite el formulario de regularización técnica y coordina la reinspección para otorgar el Sello Verde oficial ante la SEC.'
         ],
         [
             'question' => '¿Cuánto tardan en atender una emergencia de fuga o corte de suministro de gas?',

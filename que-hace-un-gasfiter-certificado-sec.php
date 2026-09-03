@@ -71,9 +71,11 @@ require_once __DIR__ . '/includes/header.php';
           El ejercicio de la profesión y la seguridad de las instalaciones de gas en Chile se rigen por un marco normativo riguroso:
         </p>
         <ul style="display:flex; flex-direction:column; gap:0.6rem; margin-bottom:1.5rem; font-size:1rem;">
-          <li>&bull; <strong>Decreto Supremo N° 191 (DS 191):</strong> Regula las licencias, deberes y clasificación de los <em>Instaladores de Gas</em> ante la SEC (Clase 1, 2 y 3).</li>
-          <li>&bull; <strong>Decretos Supremos N° 66, N° 222 y N° 20:</strong> Normativas oficiales que regulan el diseño, ejecución y seguridad de las <em>Instalaciones Interiores de Gas Domiciliarias y Comerciales</em>, artefactos de consumo y ventilaciones.</li>
-          <li>&bull; <strong>Decreto Supremo N° 67 (DS 67):</strong> Reglamenta las <em>Instalaciones de Gas de Red (Exterior)</em> y matrices pertenecientes a las empresas distribuidoras y abastecedoras (Metrogas, Lipigas, Gasco, Abastible), con las cuales el instalador coordina el empalme y puesta en servicio.</li>
+          <li>&bull; <strong>Decreto Supremo N° 191 (DS 191):</strong> Regula las licencias, exámenes de competencia y clasificación de los <em>Instaladores de Gas</em> ante la SEC (Clase 1, 2 y 3).</li>
+          <li>&bull; <strong>Decreto Supremo N° 222 (DS 222):</strong> Norma técnica oficial que rige a todas las <em>Instalaciones Interiores de Gas construidas antes del año 2007</em>.</li>
+          <li>&bull; <strong>Decreto Supremo N° 66 (DS 66):</strong> Reglamento técnico de seguridad para <em>Instalaciones Interiores de Gas construidas desde el año 2007 en adelante</em>.</li>
+          <li>&bull; <strong>Decreto Supremo N° 20 (DS 20):</strong> Decreto que modificó y perfeccionó artículos clave del DS 66 actual vigente (ventilaciones, conductos de evacuación y artefactos).</li>
+          <li>&bull; <strong>Decreto Supremo N° 67 (DS 67):</strong> Reglamenta las <em>Instalaciones de Gas de Red (Exterior)</em> y líneas matrices de las empresas distribuidoras y abastecedoras (Metrogas, Lipigas, Gasco, Abastible), con las cuales el instalador coordina el empalme y medidor.</li>
         </ul>
 
         <h2 style="font-size:1.6rem; margin-top:2rem; margin-bottom:1rem; color:var(--primary-blue);">
