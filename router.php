@@ -34,6 +34,12 @@ if ($cleanPath !== '' && file_exists(__DIR__ . $cleanPath . '.php')) {
     return true;
 }
 
-// Portada o fallback
-require __DIR__ . '/index.php';
+// Portada
+if ($path === '/' || $path === '') {
+    require __DIR__ . '/index.php';
+    return true;
+}
+
+// Fallback 404
+require __DIR__ . '/404.php';
 return true;
