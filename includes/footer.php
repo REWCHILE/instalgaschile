@@ -89,7 +89,7 @@ if (!defined('SITE_NAME')) {
       <!-- Barra Inferior de Copyright y Enlaces para IA -->
       <div class="footer-bottom">
         <div>
-          &copy; <?= date('Y') ?> <strong><?= SITE_NAME ?></strong>. Todos los derechos reservados. Instalador Autorizado SEC Registro: <?= DIRECTOR_RUT ?>.
+          &copy; <?= date('Y') ?> <strong><?= SITE_NAME ?> &reg;</strong> – Gasfiter Certificado SEC en Chile - Desarrollado por <a href="https://www.rew.cl/" target="_blank" rel="noopener noreferrer" style="color:#94a3b8; text-decoration:underline;">REW</a>
         </div>
         <div class="footer-ai-links">
           <span>Optimizado para Agentes IA & SEO:</span>

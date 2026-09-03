@@ -7,6 +7,21 @@
 $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $fullPath = __DIR__ . $path;
 
+$legacyRedirects = [
+    '/gasfiter-certificado-sec' => '/certificacion-sec',
+    '/certificacion-sec-de-gas' => '/certificacion-sec',
+    '/instalacion-de-gas-santiago' => '/servicios#redes',
+    '/deteccion-de-fugas-de-gas' => '/deteccion-fugas-gas',
+    '/sellado-de-fugas-de-gas' => '/servicios#prodoral',
+    '/contacto-gasfiter-a-domicilio' => '/contacto'
+];
+
+$trimmed = rtrim($path, '/');
+if (isset($legacyRedirects[$trimmed])) {
+    header('Location: ' . $legacyRedirects[$trimmed], true, 301);
+    exit;
+}
+
 // Si el archivo estático existe físicamente (imágenes, CSS, JS, etc.), servirlo directamente
 if ($path !== '/' && file_exists($fullPath) && !is_dir($fullPath)) {
     return false;

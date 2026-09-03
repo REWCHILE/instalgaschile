@@ -384,6 +384,142 @@ require_once __DIR__ . '/includes/header.php';
     </div>
   </section>
 
+  <!-- Nuestra Experiencia y Respaldo (+40.000 Casos y 100% Métricas) -->
+  <section class="section" id="nosotros" aria-labelledby="experience-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Trayectoria Comprobada en Chile</span>
+        <h2 id="experience-heading">40 Años de Experiencia como Gasfiter Certificado SEC</h2>
+        <p>
+          <strong>InstalGas Chile</strong> es dirigido por el Instalador Certificado Autorizado SEC <strong><?= DIRECTOR_NAME ?></strong>, con más de 40 años de experiencia en instalaciones de gas, agua, calefacción y soluciones sanitarias. A lo largo de su trayectoria ha resuelto más de 40.000 casos, priorizando siempre la seguridad, la normativa y la tranquilidad de cada cliente.
+        </p>
+      </div>
+
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-number highlight">+40.000</div>
+          <div class="metric-title">Clientes Satisfechos en 40 Años de Labor</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">100%</div>
+          <div class="metric-title">Experiencia Profesional en Gas y Agua</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">100%</div>
+          <div class="metric-title">Certificación SEC Vigente (Clase 1)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number highlight">100%</div>
+          <div class="metric-title">Diagnóstico Profesional y Pruebas de Hermeticidad</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Opiniones de Clientes Satisfechos (Social Proof) -->
+  <section class="section section-alt" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Confianza y Respaldo Real</span>
+        <h2 id="testimonials-heading">Lo que Opinan Quienes Ya Confiaron en Nosotros</h2>
+        <p>Casos reales de familias y comunidades atendidas en Santiago y la Región Metropolitana:</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            “Detectaron una fuga que otros no encontraron. El gasfiter a domicilio fue muy profesional y cuidadoso. Me dio mucha tranquilidad saber que era certificado SEC.”
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-name">Jorge R.</div>
+            <div class="testimonial-location">La Florida • Cliente Detección de Fugas</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            “Necesitaba la certificación SEC de gas para regularizar mi casa. El diagnóstico fue rápido y el proceso muy ordenado. Recomiendo totalmente a este gasfiter autorizado.”
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-name">María P.</div>
+            <div class="testimonial-location">Ñuñoa • Cliente Certificación SEC</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            “Llamé a InstalGasChile por un problema urgente y llegó un gasfiter certificado SEC que explicó todo con claridad. La instalación de gas quedó segura y funcionando perfecto. Se nota la experiencia.”
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-name">Carlos M.</div>
+            <div class="testimonial-location">Santiago Centro • Cliente Instalación de Gas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Blog / Guías Técnicas -->
+  <section class="section" id="blog" aria-labelledby="blog-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Educación y Prevención</span>
+        <h2 id="blog-heading">Consejos y Guías de Gasfiter Certificado SEC</h2>
+        <p>Artículos técnicos redactados para ayudar a los propietarios a cuidar su hogar y cumplir las normativas:</p>
+      </div>
+
+      <div class="blog-grid">
+        <article class="blog-card">
+          <a href="<?= SITE_URL ?>/diferencia-gasfiter-certificado-y-no-certificado" style="display:block; overflow:hidden;">
+            <img src="<?= SITE_URL ?>/blog/gasfiter-certificado-vs-no-certificado.png" alt="Gasfiter certificado vs gasfiter no certificado" width="400" height="225" style="width:100%; height:200px; object-fit:cover; display:block;" loading="lazy">
+          </a>
+          <div class="blog-body">
+            <div class="blog-date">7 de Enero de 2026</div>
+            <h3 class="blog-heading">
+              <a href="<?= SITE_URL ?>/diferencia-gasfiter-certificado-y-no-certificado">Gasfiter certificado vs gasfiter no certificado</a>
+            </h3>
+            <p class="blog-text">
+              Descubra por qué contratar a un gásfiter aficionado puede provocar cortes de suministro por Metrogas o la anulación de su seguro de hogar.
+            </p>
+            <a href="<?= SITE_URL ?>/diferencia-gasfiter-certificado-y-no-certificado" class="btn btn-outline btn-sm">Leer Guía Completa &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <a href="<?= SITE_URL ?>/como-verificar-gasfiter-certificado-sec" style="display:block; overflow:hidden;">
+            <img src="<?= SITE_URL ?>/blog/verificar-gasfiter-certificado-sec.png" alt="Cómo verificar si un gasfiter es certificado SEC" width="400" height="225" style="width:100%; height:200px; object-fit:cover; display:block;" loading="lazy">
+          </a>
+          <div class="blog-body">
+            <div class="blog-date">7 de Enero de 2026</div>
+            <h3 class="blog-heading">
+              <a href="<?= SITE_URL ?>/como-verificar-gasfiter-certificado-sec">Cómo verificar si un gasfiter es certificado SEC</a>
+            </h3>
+            <p class="blog-text">
+              Paso a paso para consultar el registro público de la Superintendencia de Electricidad y Combustibles y validar el código QR oficial.
+            </p>
+            <a href="<?= SITE_URL ?>/como-verificar-gasfiter-certificado-sec" class="btn btn-outline btn-sm">Leer Guía Completa &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <a href="<?= SITE_URL ?>/que-hace-un-gasfiter-certificado-sec" style="display:block; overflow:hidden;">
+            <img src="<?= SITE_URL ?>/blog/funciones-gasfiter-certificado-sec.png" alt="¿Qué hace un gasfiter certificado SEC?" width="400" height="225" style="width:100%; height:200px; object-fit:cover; display:block;" loading="lazy">
+          </a>
+          <div class="blog-body">
+            <div class="blog-date">7 de Enero de 2026</div>
+            <h3 class="blog-heading">
+              <a href="<?= SITE_URL ?>/que-hace-un-gasfiter-certificado-sec">¿Qué hace un gasfiter certificado SEC?</a>
+            </h3>
+            <p class="blog-text">
+              Conozca el campo de acción de un instalador Clase 1: proyectos de cobre DS 66, pruebas de hermeticidad y tramitaciones de Sello Verde.
+            </p>
+            <a href="<?= SITE_URL ?>/que-hace-un-gasfiter-certificado-sec" class="btn btn-outline btn-sm">Leer Guía Completa &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- Inclusión de Preguntas Frecuentes (FAQ) -->
   <?php 
   $faq_list = $page_faqs;

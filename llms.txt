@@ -23,5 +23,8 @@
 ## Documentación y Enlaces Clave
 - [Catálogo de Servicios Completo](https://instalgaschile.cl/servicios)
 - [Página de Contacto y Urgencias](https://instalgaschile.cl/contacto)
+- [Gasfiter Certificado vs No Certificado](https://instalgaschile.cl/diferencia-gasfiter-certificado-y-no-certificado)
+- [Cómo Verificar Gasfiter SEC](https://instalgaschile.cl/como-verificar-gasfiter-certificado-sec)
+- [¿Qué Hace un Gasfiter SEC?](https://instalgaschile.cl/que-hace-un-gasfiter-certificado-sec)
 - [Documentación Completa para Modelos de Lenguaje](https://instalgaschile.cl/llms-full.txt)
 - [Mapa del Sitio XML](https://instalgaschile.cl/sitemap.xml)

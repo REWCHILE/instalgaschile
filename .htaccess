@@ -11,6 +11,14 @@
   RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(.*?)\.php[\s?] [NC]
   RewriteRule ^ %1 [R=301,L]
 
+  # Redirecciones 301 de URLs del sitio WordPress anterior para preservar SEO y enlaces
+  RewriteRule ^gasfiter-certificado-sec/?$ /certificacion-sec [R=301,L]
+  RewriteRule ^certificacion-sec-de-gas/?$ /certificacion-sec [R=301,L]
+  RewriteRule ^instalacion-de-gas-santiago/?$ /servicios#redes [R=301,NE,L]
+  RewriteRule ^deteccion-de-fugas-de-gas/?$ /deteccion-fugas-gas [R=301,L]
+  RewriteRule ^sellado-de-fugas-de-gas/?$ /servicios#prodoral [R=301,NE,L]
+  RewriteRule ^contacto-gasfiter-a-domicilio/?$ /contacto [R=301,L]
+
   # Quitar barra diagonal final si no es un directorio real
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_URI} (.+)/$
