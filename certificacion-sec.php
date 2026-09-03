@@ -85,7 +85,7 @@ require_once __DIR__ . '/includes/header.php';
         </div>
 
         <div>
-          <img src="<?= SITE_URL ?>/assets/img/certificacion-sello-verde-sec.jpg" alt="Certificado de Inspección Periódica Sello Verde SEC por Instalador Certificado en Santiago" width="600" height="338" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); border: 2px solid var(--sec-green);" loading="eager">
+          <img src="<?= SITE_URL ?>/assets/img/certificacion-sello-verde-sec.webp" alt="Certificado de Inspección Periódica Sello Verde SEC por Instalador Certificado en Santiago" width="600" height="338" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); border: 2px solid var(--sec-green);" loading="eager">
         </div>
       </div>
     </div>

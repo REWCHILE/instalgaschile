@@ -89,7 +89,7 @@ require_once __DIR__ . '/includes/header.php';
         </div>
 
         <div>
-          <img src="<?= SITE_URL ?>/assets/img/hero-tecnico-gas-sec.jpg" alt="Técnico Instalador SEC inspeccionando red de gas con detector digital en Santiago" width="600" height="338" style="border-radius:var(--radius-lg); box-shadow:var(--shadow-xl); border:2px solid var(--accent-red);" loading="eager">
+          <img src="<?= SITE_URL ?>/assets/img/hero-tecnico-gas-sec.webp" alt="Técnico Instalador SEC inspeccionando red de gas con detector digital en Santiago" width="600" height="338" style="border-radius:var(--radius-lg); box-shadow:var(--shadow-xl); border:2px solid var(--accent-red);" loading="eager">
         </div>
       </div>
     </div>

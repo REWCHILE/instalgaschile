@@ -841,6 +841,7 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   }
 }
 
+.footer-col h3,
 .footer-col h4 {
   color: #ffffff;
   font-size: 1.15rem;
@@ -849,6 +850,7 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
   padding-bottom: 0.5rem;
 }
 
+.footer-col h3::after,
 .footer-col h4::after {
   content: '';
   position: absolute;

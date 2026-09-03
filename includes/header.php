@@ -15,15 +15,65 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <!-- Google Fonts Preconnect & Fonts -->
+  <!-- Google Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Estilos Principales -->
-  <link rel="stylesheet" href="<?= SITE_URL ?>/assets/css/style.css">
-  <link rel="icon" type="image/png" href="<?= SITE_URL ?>/assets/img/logo-instalgas.png">
-  <link rel="apple-touch-icon" href="<?= SITE_URL ?>/assets/img/logo-instalgas.png">
+
+  <!-- Carga Asíncrona No Bloqueante de Google Fonts (display=swap) -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap">
+  </noscript>
+
+  <!-- CSS Crítico en Línea (Above-the-Fold Instantáneo - 0ms bloqueo de LCP/FCP) -->
+  <style>
+    :root {
+      --primary-blue: #0d254c;
+      --primary-blue-dark: #07162e;
+      --accent-red: #c62828;
+      --sec-green: #10b981;
+      --bg-light: #f8fafc;
+      --border-color: #e2e8f0;
+      --text-dark: #0f172a;
+      --text-muted: #475569;
+      --font-heading: 'Outfit', system-ui, -apple-system, sans-serif;
+      --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-body); background-color: var(--bg-light); color: var(--text-dark); line-height: 1.6; }
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.25rem; }
+    .top-bar { background-color: #07152b; color: #ffffff; font-size: 0.85rem; padding: 0.5rem 0; }
+    .top-bar-content { display: flex; justify-content: space-between; align-items: center; }
+    .top-badge-sec { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: #38bdf8; }
+    .top-emergency-contact { display: flex; align-items: center; gap: 1.25rem; }
+    .top-phone-link { color: #ffffff; text-decoration: none; display: flex; align-items: center; gap: 0.4rem; font-weight: 600; }
+    .site-header { background: #ffffff; box-shadow: 0 2px 8px rgba(13,37,76,0.08); position: sticky; top: 0; z-index: 100; }
+    .navbar { display: flex; justify-content: space-between; align-items: center; height: 80px; }
+    .brand-wrapper { display: flex; align-items: center; gap: 0.85rem; text-decoration: none; }
+    .brand-logo-img { width: 58px; height: 58px; border-radius: 8px; }
+    .brand-title { font-family: var(--font-heading); font-size: 1.45rem; font-weight: 800; color: var(--primary-blue); line-height: 1.1; }
+    .brand-title span { color: var(--accent-red); }
+    .brand-subtitle { font-size: 0.75rem; color: #059669; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; display: block; }
+    .hero-section { background: linear-gradient(135deg, #07162e 0%, var(--primary-blue) 100%); color: #ffffff; padding: 3.5rem 0; }
+    .hero-title { font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.25rem; color: #ffffff; }
+    .hero-subtitle { font-size: 1.15rem; color: #cbd5e1; margin-bottom: 2rem; line-height: 1.6; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; font-family: var(--font-heading); font-weight: 700; border-radius: 8px; text-decoration: none; cursor: pointer; padding: 0.75rem 1.5rem; border: none; }
+    .btn-whatsapp { background-color: #25d366; color: #ffffff; }
+    .btn-primary { background-color: var(--accent-red); color: #ffffff; }
+  </style>
+
+  <!-- Carga Asíncrona de la Hoja de Estilos Completa -->
+  <link rel="preload" as="style" href="<?= SITE_URL ?>/assets/css/style.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="<?= SITE_URL ?>/assets/css/style.css">
+  </noscript>
+
+  <!-- Favicons WebP -->
+  <link rel="icon" type="image/webp" href="<?= SITE_URL ?>/assets/img/logo-instalgas.webp">
+  <link rel="apple-touch-icon" href="<?= SITE_URL ?>/assets/img/logo-instalgas.webp">
+
+  <!-- Javascript Diferido (Sin bloqueo del hilo principal) -->
+  <script src="<?= SITE_URL ?>/assets/js/main.js" defer></script>
 
   <!-- Metadatos SEO específicos de la página -->
   <?php if (isset($seo_config)) render_seo_meta($seo_config); ?>
@@ -54,7 +104,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
   <header class="site-header" role="banner">
     <div class="container navbar">
       <a href="<?= SITE_URL ?>/" class="brand-wrapper" aria-label="Ir a la portada de Instalgas Chile">
-        <img src="<?= SITE_URL ?>/assets/img/logo-instalgas.png" alt="Logotipo Gásfiter Certificado SEC Instalgas Chile" class="brand-logo-img" width="58" height="58" loading="eager">
+        <img src="<?= SITE_URL ?>/assets/img/logo-instalgas.webp" alt="Logotipo Gásfiter Certificado SEC Instalgas Chile" class="brand-logo-img" width="58" height="58" fetchpriority="high">
         <div class="brand-text">
           <span class="brand-title">INSTALGAS <span>CHILE</span></span>
           <span class="brand-subtitle">Instalador Certificado SEC</span>

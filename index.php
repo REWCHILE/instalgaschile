@@ -106,13 +106,13 @@ require_once __DIR__ . '/includes/header.php';
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                 <span>CERTIFICADO SEC OFICIAL</span>
               </div>
-              <img src="<?= SITE_URL ?>/assets/img/sec-validacion-qr-badge.jpeg" alt="Código de Verificación Superintendencia de Electricidad y Combustibles SEC" width="75" height="34" loading="lazy" style="border-radius:4px; border:1px solid #e2e8f0;">
+              <img src="<?= SITE_URL ?>/assets/img/sec-validacion-qr-badge.webp" alt="Código de Verificación Superintendencia de Electricidad y Combustibles SEC" width="73" height="31" loading="lazy" style="border-radius:4px; border:1px solid #e2e8f0; width:73px; height:31px; object-fit:contain;">
             </div>
 
             <div class="credential-body">
-              <img src="<?= SITE_URL ?>/assets/img/credencial-sec-domingo-isain.jpg" alt="Credencial Oficial SEC de Domingo Isaín Plaza Caamaño RUT 12.738.961-6" class="credential-photo" width="110" height="110" loading="eager">
+              <img src="<?= SITE_URL ?>/assets/img/credencial-sec-domingo-isain.webp" alt="Credencial Oficial SEC de Domingo Isaín Plaza Caamaño RUT 12.738.961-6" class="credential-photo" width="110" height="110" fetchpriority="high" style="width:110px; height:110px; object-fit:cover;">
               <div class="credential-details">
-                <h4><?= DIRECTOR_NAME ?></h4>
+                <div class="credential-name" style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--primary-blue); margin-bottom: 0.2rem;"><?= DIRECTOR_NAME ?></div>
                 <div class="credential-rut">RUT: <?= DIRECTOR_RUT ?></div>
                 <div class="credential-role">
                   Instalador Autorizado de Gas Clase 1 ante la SEC Chile. Más de 40 años de trayectoria técnica y más de 40.000 servicios ejecutados con éxito.

@@ -13,7 +13,7 @@ if (!defined('SITE_NAME')) {
         <!-- Columna 1: Identidad y Respaldo Técnico -->
         <div class="footer-col">
           <div class="brand-wrapper" style="margin-bottom: 1.25rem;">
-            <img src="<?= SITE_URL ?>/assets/img/logo-instalgas.png" alt="Sello Gásfiter Certificado SEC Instalgas Chile" width="50" height="50" loading="lazy" style="border-radius:50%;">
+            <img src="<?= SITE_URL ?>/assets/img/logo-instalgas.webp" alt="Sello Gásfiter Certificado SEC Instalgas Chile" width="50" height="50" loading="lazy" style="border-radius:50%;">
             <div class="brand-text">
               <span class="brand-title" style="color:#ffffff;">INSTALGAS <span style="color:#f87171;">CHILE</span></span>
               <span class="brand-subtitle" style="color:#34d399;">Autorizado SEC DS 66</span>
@@ -30,7 +30,7 @@ if (!defined('SITE_NAME')) {
 
         <!-- Columna 2: Servicios Especializados -->
         <div class="footer-col">
-          <h4>Servicios Principales</h4>
+          <h3>Servicios Principales</h3>
           <ul class="footer-links">
             <li><a href="<?= SITE_URL ?>/deteccion-fugas-gas">Detección de Fugas sin Romper</a></li>
             <li><a href="<?= SITE_URL ?>/certificacion-sec">Certificación y Sello Verde SEC</a></li>
@@ -43,7 +43,7 @@ if (!defined('SITE_NAME')) {
 
         <!-- Columna 3: Enlaces Rápidos y Navegación -->
         <div class="footer-col">
-          <h4>Navegación Rápida</h4>
+          <h3>Navegación Rápida</h3>
           <ul class="footer-links">
             <li><a href="<?= SITE_URL ?>/">Inicio</a></li>
             <li><a href="<?= SITE_URL ?>/certificacion-sec">¿Por qué elegir instalador SEC?</a></li>
@@ -56,7 +56,7 @@ if (!defined('SITE_NAME')) {
 
         <!-- Columna 4: Contacto Directo y Urgencias -->
         <div class="footer-col">
-          <h4>Atención Inmediata</h4>
+          <h3>Atención Inmediata</h3>
           <div class="footer-contact-item">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             <div>

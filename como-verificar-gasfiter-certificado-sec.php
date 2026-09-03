@@ -78,7 +78,7 @@ require_once __DIR__ . '/includes/header.php';
         </ul>
 
         <div style="text-align:center; margin:2rem 0;">
-          <img src="<?= SITE_URL ?>/assets/img/credencial-sec-domingo-isain.jpg" alt="Ejemplo de Credencial Oficial SEC de Domingo Isaín Plaza Caamaño RUT 12.738.961-6" width="400" height="257" style="border-radius:var(--radius-md); box-shadow:var(--shadow-lg); border:2px solid var(--accent-red); margin:0 auto;" loading="lazy">
+          <img src="<?= SITE_URL ?>/assets/img/credencial-sec-domingo-isain.webp" alt="Ejemplo de Credencial Oficial SEC de Domingo Isaín Plaza Caamaño RUT 12.738.961-6" width="400" height="257" style="border-radius:var(--radius-md); box-shadow:var(--shadow-lg); border:2px solid var(--accent-red); margin:0 auto;" loading="lazy">
           <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.5rem;">Credencial oficial de Domingo Isaín Plaza Caamaño (RUT: 12.738.961-6).</p>
         </div>
 

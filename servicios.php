@@ -90,14 +90,14 @@ require_once __DIR__ . '/includes/header.php';
             </div>
           </div>
           <div>
-            <img src="<?= SITE_URL ?>/assets/img/hero-tecnico-gas-sec.jpg" alt="Detección de fugas de gas no invasiva en Santiago" width="450" height="280" style="border-radius: var(--radius-md); box-shadow: var(--shadow-md); object-fit: cover;" loading="lazy">
+            <img src="<?= SITE_URL ?>/assets/img/hero-tecnico-gas-sec.webp" alt="Detección de fugas de gas no invasiva en Santiago" width="450" height="280" style="border-radius: var(--radius-md); box-shadow: var(--shadow-md); object-fit: cover;" loading="lazy">
           </div>
         </article>
 
         <!-- Servicio 2: Prodoral R6-1 -->
         <article id="prodoral" class="contact-card" style="display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 2rem; align-items: center;">
           <div>
-            <img src="<?= SITE_URL ?>/assets/img/gasfiter-trabajo-instalaciones.png" alt="Sellado de cañerías con Prodoral R6-1 en Santiago" width="450" height="300" style="border-radius: var(--radius-md); box-shadow: var(--shadow-md); object-fit: cover;" loading="lazy">
+            <img src="<?= SITE_URL ?>/assets/img/gasfiter-trabajo-instalaciones.webp" alt="Sellado de cañerías con Prodoral R6-1 en Santiago" width="450" height="300" style="border-radius: var(--radius-md); box-shadow: var(--shadow-md); object-fit: cover;" loading="lazy">
           </div>
           <div>
             <span class="section-badge">Exclusividad Técnica</span>
@@ -149,14 +149,14 @@ require_once __DIR__ . '/includes/header.php';
             </div>
           </div>
           <div>
-            <img src="<?= SITE_URL ?>/assets/img/certificacion-sello-verde-sec.jpg" alt="Certificado Sello Verde SEC oficial en Santiago" width="450" height="280" style="border-radius: var(--radius-md); box-shadow: var(--shadow-md); object-fit: cover;" loading="lazy">
+            <img src="<?= SITE_URL ?>/assets/img/certificacion-sello-verde-sec.webp" alt="Certificado Sello Verde SEC oficial en Santiago" width="450" height="280" style="border-radius: var(--radius-md); box-shadow: var(--shadow-md); object-fit: cover;" loading="lazy">
           </div>
         </article>
 
         <!-- Servicio 4: Redes de Cobre y Conversiones -->
         <article id="redes" class="contact-card" style="display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 2rem; align-items: center;">
           <div>
-            <img src="<?= SITE_URL ?>/assets/img/gasfiter-trabajo-instalaciones.png" alt="Instalación de redes de cobre soldadas para gas en Santiago" width="450" height="280" style="border-radius: var(--radius-md); box-shadow: var(--shadow-md); object-fit: cover;" loading="lazy">
+            <img src="<?= SITE_URL ?>/assets/img/gasfiter-trabajo-instalaciones.webp" alt="Instalación de redes de cobre soldadas para gas en Santiago" width="450" height="280" style="border-radius: var(--radius-md); box-shadow: var(--shadow-md); object-fit: cover;" loading="lazy">
           </div>
           <div>
             <span class="section-badge">Montaje y Construcción</span>
@@ -203,7 +203,7 @@ require_once __DIR__ . '/includes/header.php';
             </a>
           </div>
           <div>
-            <img src="<?= SITE_URL ?>/assets/img/certificacion-sello-verde-sec.jpg" alt="Servicio técnico de calderas y calefont con certificación SEC" width="450" height="280" style="border-radius: var(--radius-md); box-shadow: var(--shadow-md); object-fit: cover;" loading="lazy">
+            <img src="<?= SITE_URL ?>/assets/img/certificacion-sello-verde-sec.webp" alt="Servicio técnico de calderas y calefont con certificación SEC" width="450" height="280" style="border-radius: var(--radius-md); box-shadow: var(--shadow-md); object-fit: cover;" loading="lazy">
           </div>
         </article>
 
