@@ -26,6 +26,12 @@ if (!defined('SITE_NAME')) {
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             <span style="font-size:0.8rem; color:#e2e8f0;">+40 años de trayectoria | +40.000 trabajos</span>
           </div>
+          <div style="margin-top: 0.75rem;">
+            <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.4rem; color:#38bdf8; font-size:0.85rem; text-decoration:none; font-weight:600;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span>Verificar Licencia SEC Oficial (Estado: ACTIVO) &nearr;</span>
+            </a>
+          </div>
         </div>
 
         <!-- Columna 2: Servicios Especializados -->
@@ -86,16 +92,13 @@ if (!defined('SITE_NAME')) {
         </div>
       </div>
 
-      <!-- Barra Inferior de Copyright y Enlaces para IA -->
-      <div class="footer-bottom">
+      <!-- Barra Inferior de Copyright -->
+      <div class="footer-bottom" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
         <div>
           &copy; <?= date('Y') ?> <strong><?= SITE_NAME ?> &reg;</strong> – Gasfiter Certificado SEC en Chile - Desarrollado por <a href="https://www.rew.cl/" target="_blank" rel="noopener noreferrer" style="color:#94a3b8; text-decoration:underline;">REW</a>
         </div>
-        <div class="footer-ai-links">
-          <span>Optimizado para Agentes IA & SEO:</span>
-          <a href="<?= SITE_URL ?>/llms.txt" title="Documento conciso para modelos de lenguaje">llms.txt</a>
-          <a href="<?= SITE_URL ?>/llms-full.txt" title="Documentación extendida para modelos de lenguaje">llms-full.txt</a>
-          <a href="<?= SITE_URL ?>/robots.txt">robots.txt</a>
+        <div style="font-size:0.85rem; color:#64748b;">
+          Todos los derechos reservados.
         </div>
       </div>
     </div>

@@ -52,7 +52,7 @@ require_once __DIR__ . '/includes/header.php';
       <span class="section-badge">Soluciones de Ingeniería y Gasfitería SEC</span>
       <h1>Nuestros Servicios Especializados en Gas</h1>
       <p style="font-size: 1.15rem; color: var(--text-muted); margin-top: 1rem;">
-        Con el respaldo del instalador certificado <strong><?= DIRECTOR_NAME ?></strong> (RUT: <?= DIRECTOR_RUT ?>) y más de 40 años de trayectoria garantizando seguridad y estricto apego al Decreto Supremo N° 66.
+        Con el respaldo del instalador autorizado <strong><?= DIRECTOR_NAME ?></strong> (RUT: <?= DIRECTOR_RUT ?>), acreditado ante la SEC desde el año 2012 (Clase 3) y con más de 40 años de trayectoria técnica garantizando seguridad y estricto apego normativo.
       </p>
     </div>
   </section>

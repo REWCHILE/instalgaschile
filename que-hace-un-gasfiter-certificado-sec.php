@@ -105,7 +105,7 @@ require_once __DIR__ . '/includes/header.php';
         </div>
 
         <p>
-          En <strong>Instalgas Chile</strong>, bajo la dirección de <strong><?= DIRECTOR_NAME ?></strong>, combinamos más de 40 años de oficio con el rigor técnico y la acreditación oficial SEC para que su hogar y su familia estén 100% protegidos.
+          En <strong>Instalgas Chile</strong>, bajo la dirección de <strong><?= DIRECTOR_NAME ?></strong>, combinamos más de 40 años de oficio técnico con la acreditación formal de la SEC desde el año 2012 (Clase 3) para que su hogar y su familia estén 100% protegidos.
         </p>
 
         <div style="text-align:center; margin-top:2.5rem;">

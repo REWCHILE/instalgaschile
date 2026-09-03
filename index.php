@@ -101,22 +101,44 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Tarjeta de Verificación Oficial SEC -->
         <div class="hero-credential-wrapper">
           <div class="credential-card">
-            <div class="credential-header">
-              <div class="sec-stamp">
+            <div class="credential-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; padding-bottom:0.75rem; border-bottom:1px solid #e2e8f0;">
+              <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" class="sec-stamp" style="text-decoration:none;" title="Verificar Certificado SEC Oficial en el portal de la SEC (Estado: ACTIVO)">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>CERTIFICADO SEC OFICIAL</span>
-              </div>
-              <img src="<?= SITE_URL ?>/assets/img/sec-validacion-qr-badge.webp" alt="Código de Verificación Superintendencia de Electricidad y Combustibles SEC" width="73" height="31" loading="lazy" style="border-radius:4px; border:1px solid #e2e8f0; width:73px; height:31px; object-fit:contain;">
+                <span>CERTIFICADO SEC OFICIAL &nearr;</span>
+              </a>
+              <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" style="background:#10b981; color:#ffffff; font-size:0.75rem; font-weight:800; padding:3px 8px; border-radius:4px; text-decoration:none;" title="Licencia vigente y activa en el Registro Nacional de Instaladores de la SEC">
+                ESTADO: ACTIVO &check;
+              </a>
             </div>
 
             <div class="credential-body">
-              <img src="<?= SITE_URL ?>/assets/img/credencial-sec-domingo-isain.webp" alt="Credencial Oficial SEC de Domingo Isaín Plaza Caamaño RUT 12.738.961-6" class="credential-photo" width="110" height="110" fetchpriority="high" style="width:110px; height:110px; object-fit:cover;">
+              <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" title="Verificar credencial en portal SEC">
+                <img src="<?= SITE_URL ?>/assets/img/credencial-sec-domingo-isain.webp" alt="Credencial Oficial SEC de Domingo Isaín Plaza Caamaño RUT 12.738.961-6" class="credential-photo" width="110" height="110" fetchpriority="high" style="width:110px; height:110px; object-fit:cover; cursor:pointer;">
+              </a>
               <div class="credential-details">
                 <div class="credential-name" style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--primary-blue); margin-bottom: 0.2rem;"><?= DIRECTOR_NAME ?></div>
-                <div class="credential-rut">RUT: <?= DIRECTOR_RUT ?></div>
-                <div class="credential-role">
-                  Instalador Autorizado de Gas Clase 3 ante la SEC Chile. Más de 40 años de trayectoria técnica y más de 40.000 servicios ejecutados con éxito.
+                <div class="credential-rut" style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap; margin-bottom:0.3rem;">
+                  <span>RUT: <?= DIRECTOR_RUT ?></span>
+                  <span style="color:#059669; font-weight:700;">• Clase 3 (DS 191)</span>
                 </div>
+                <div class="credential-role" style="font-size:0.85rem; color:#475569; line-height:1.4;">
+                  Instalador Autorizado de Gas Clase 3 ante la SEC (desde 2012). Más de 40 años de oficio técnico y más de 40.000 servicios ejecutados.
+                </div>
+              </div>
+            </div>
+
+            <!-- Bloque de Código QR Escaneable en Tamaño Grande -->
+            <div class="credential-qr-box" style="background:#f0f9ff; border:1px solid #bae6fd; border-radius:8px; padding:0.85rem; margin:1rem 0; display:flex; align-items:center; gap:1rem;">
+              <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" title="Haga clic para validar el código QR oficial en el portal de la SEC" style="display:block; flex-shrink:0;">
+                <img src="<?= SITE_URL ?>/assets/img/qr-sec-domingo-isain.webp" alt="Código QR de Validación Oficial SEC Domingo Isaín Plaza Caamaño" width="110" height="110" style="width:110px; height:110px; border-radius:6px; border:2px solid #0284c7; background:#ffffff; display:block; padding:4px; box-shadow:0 2px 6px rgba(2,132,199,0.15); cursor:pointer;">
+              </a>
+              <div style="flex:1;">
+                <div style="font-size:0.75rem; font-weight:800; color:#0369a1; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:0.2rem;">Verificación Oficial SEC</div>
+                <div style="font-weight:700; font-size:0.95rem; color:var(--primary-blue); line-height:1.2; margin-bottom:0.3rem;">Código QR de Licencia</div>
+                <p style="font-size:0.78rem; color:#475569; line-height:1.35; margin:0 0 0.4rem 0;">Escanee con la cámara de su celular o haga clic aquí para ver la ficha pública en sec.cl</p>
+                <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; font-weight:700; color:#0284c7; text-decoration:underline; display:inline-flex; align-items:center; gap:0.25rem;">
+                  <span>Abrir Certificado Oficial SEC &nearr;</span>
+                </a>
               </div>
             </div>
 
@@ -137,7 +159,12 @@ require_once __DIR__ . '/includes/header.php';
               </ul>
             </div>
 
-            <a href="<?= get_whatsapp_url('Hola Domingo Isaín, vi su credencial SEC y necesito coordinar una visita técnica.') ?>" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width:100%;">
+            <a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width:100%; border-color:#0284c7; color:#0284c7; font-size:0.85rem; padding:0.6rem 1rem; margin-bottom:0.75rem; background:rgba(2,132,199,0.06); text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:0.4rem;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span>Ver Certificado SEC Oficial en Línea (Estado: ACTIVO) &nearr;</span>
+            </a>
+
+            <a href="<?= get_whatsapp_url('Hola Domingo Isaín, vi su credencial SEC oficial y necesito coordinar una visita técnica.') ?>" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width:100%;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.353.101.174.449.741.963 1.2 1.066.95 1.96 1.246 2.239 1.39.278.145.441.13.607-.058.166-.188.708-.824.896-1.113.188-.289.376-.241.636-.145.26.096 1.646.776 1.927.915.281.139.469.208.538.327.069.119.069.69-.075 1.095z"/></svg>
               <span>Consultar Directo al +56 9 4987 7316</span>
             </a>
@@ -168,7 +195,7 @@ require_once __DIR__ . '/includes/header.php';
           <ul>
             <li>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <div><strong>Habilitación Legal Plena:</strong> Instalador oficial SEC Clase 3 con carnet vigente y RUT visible (12.738.961-6).</div>
+              <div><strong>Habilitación Legal Plena:</strong> Instalador oficial SEC Clase 3 con carnet vigente y RUT visible 12.738.961-6 (<a href="<?= SEC_VALIDATION_URL ?>" target="_blank" rel="noopener noreferrer" style="color:var(--sec-green-dark); font-weight:700; text-decoration:underline;">Verificar Licencia en portal SEC &nearr;</a>).</div>
             </li>
             <li>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
@@ -389,9 +416,9 @@ require_once __DIR__ . '/includes/header.php';
     <div class="container">
       <div class="section-header">
         <span class="section-badge">Trayectoria Comprobada en Chile</span>
-        <h2 id="experience-heading">40 Años de Experiencia como Gasfiter Certificado SEC</h2>
+        <h2 id="experience-heading">+40 Años de Experiencia y Certificación SEC desde 2012</h2>
         <p>
-          <strong>InstalGas Chile</strong> es dirigido por el Instalador Certificado Autorizado SEC <strong><?= DIRECTOR_NAME ?></strong>, con más de 40 años de experiencia en instalaciones de gas, agua, calefacción y soluciones sanitarias. A lo largo de su trayectoria ha resuelto más de 40.000 casos, priorizando siempre la seguridad, la normativa y la tranquilidad de cada cliente.
+          <strong>InstalGas Chile</strong> es dirigido por el Instalador Autorizado SEC <strong><?= DIRECTOR_NAME ?></strong>, con más de 40 años de trayectoria técnica en instalaciones de gas, agua y soluciones sanitarias, y acreditado ininterrumpidamente ante la Superintendencia de Electricidad y Combustibles (SEC) desde el año 2012 (Clase 3 • DS 191). A lo largo de su historia ha resuelto más de 40.000 casos, priorizando siempre la seguridad de las personas y el cumplimiento de la ley.
         </p>
       </div>
 

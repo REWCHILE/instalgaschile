@@ -18,6 +18,9 @@ define('LEGAL_NAME', 'Instalgaschile SpA');
 define('DIRECTOR_NAME', 'Domingo Isaín Plaza Caamaño');
 define('DIRECTOR_RUT', '12.738.961-6');
 define('DIRECTOR_SEC', 'Instalador Autorizado SEC Clase 3');
+define('SEC_VALIDATION_URL', 'https://wlhttp.sec.cl/rnii/public/licencia/qr?o=285eb263edf5cb049f3f4cc7fa0d2182');
+define('SEC_STATUS', 'ACTIVO');
+define('SEC_SINCE_YEAR', '2012');
 
 // Canales de Contacto Directo
 define('PHONE_RAW', '56949877316');
