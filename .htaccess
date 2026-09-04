@@ -17,8 +17,8 @@ ErrorDocument 404 /404.php
   # Redirecciones 301 comodín de URLs heredadas de WordPress / Google para preservar SEO
   RewriteRule ^deteccion-de-fugas.*$ /deteccion-fugas-gas [R=301,L]
   RewriteRule ^fugas-de-gas.*$ /deteccion-fugas-gas [R=301,L]
-  RewriteRule ^gasfiter-certificado.*$ /certificacion-sec [R=301,L]
-  RewriteRule ^certificacion-sec.*$ /certificacion-sec [R=301,L]
+  RewriteRule ^gasfiter-certificado-sec/?$ /certificacion-sec [R=301,L]
+  RewriteRule ^certificacion-sec-de-gas.*$ /certificacion-sec [R=301,L]
   RewriteRule ^sello-verde.*$ /certificacion-sec [R=301,L]
   RewriteRule ^sello-rojo.*$ /certificacion-sec [R=301,L]
   RewriteRule ^instalacion-de-gas.*$ /servicios#redes [R=301,NE,L]
