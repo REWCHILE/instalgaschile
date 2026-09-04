@@ -30,3 +30,10 @@
 - [Gasfiter SEC en Vitacura y Zona Oriente](https://instalgaschile.cl/gasfiter-certificado-sec-vitacura)
 - [Documentación Completa para Modelos de Lenguaje](https://instalgaschile.cl/llms-full.txt)
 - [Mapa del Sitio XML](https://instalgaschile.cl/sitemap.xml)
+
+## Herramientas para Agentes de IA (WebMCP & Navegación Agéntica)
+- **WebMCP Declarativo:** Los formularios en `/` y `/contacto` exponen `toolname="solicitar_cotizacion_gas"` y `toolname="solicitar_diagnostico_gas"` para agentes de Chromium/Chrome 150+.
+- **WebMCP Imperativo:** Integrado vía `navigator.modelContext.registerTool`:
+  - `solicitar_cotizacion_gas`: Genera solicitudes estructuradas de cotización y urgencias 24/7.
+  - `verificar_licencia_sec`: Provee metadatos verificables del Instalador Autorizado SEC Clase 3 (RUT 12.738.961-6) con enlace directo al portal oficial de la SEC.
+

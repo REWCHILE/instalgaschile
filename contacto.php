@@ -130,10 +130,14 @@ require_once __DIR__ . '/includes/header.php';
               Envíenos sus requerimientos y recibirá atención técnica directa de Domingo Isaín vía WhatsApp:
             </p>
 
-            <form id="quickQuoteForm">
+            <form id="quickQuoteForm"
+                  toolname="solicitar_diagnostico_gas"
+                  tooldescription="Formulario para solicitar evaluación técnica, presupuesto y diagnóstico de fugas, normalización Sello Verde o redes de gas con el Instalador SEC Domingo Isaín."
+                  method="GET"
+                  action="<?= SITE_URL ?>/contacto">
               <div class="form-group">
                 <label for="formService" class="form-label">Servicio Requerido *</label>
-                <select id="formService" class="form-control" required>
+                <select id="formService" name="servicio" toolparamname="servicio" class="form-control" required>
                   <option value="Detección de Fugas con Gas Trazador">Detección de Fugas con Gas Trazador</option>
                   <option value="Sellado con Prodoral R6-1 sin Romper">Sellado con Prodoral R6-1 sin Romper</option>
                   <option value="Certificación SEC / Sello Verde">Certificación SEC / Sello Verde</option>
@@ -146,12 +150,12 @@ require_once __DIR__ . '/includes/header.php';
 
               <div class="form-group">
                 <label for="formCommune" class="form-label">Comuna o Ciudad *</label>
-                <input type="text" id="formCommune" class="form-control" placeholder="Ej: Providencia, Las Condes, Santiago Centro..." required>
+                <input type="text" id="formCommune" name="comuna" toolparamname="comuna" class="form-control" placeholder="Ej: Providencia, Las Condes, Santiago Centro..." required>
               </div>
 
               <div class="form-group">
                 <label for="formUrgency" class="form-label">Nivel de Urgencia</label>
-                <select id="formUrgency" class="form-control">
+                <select id="formUrgency" name="urgencia" toolparamname="urgencia" class="form-control">
                   <option value="Urgente - Emergencia Hoy">Urgente - Emergencia Hoy</option>
                   <option value="Para esta semana">Para esta semana</option>
                   <option value="Consulta o presupuesto previo">Consulta o presupuesto previo</option>
@@ -160,10 +164,10 @@ require_once __DIR__ . '/includes/header.php';
 
               <div class="form-group">
                 <label for="formComment" class="form-label">Descripción del Problema</label>
-                <textarea id="formComment" class="form-control" rows="4" placeholder="Indique qué ocurre: olor a gas, rechazo en inspección SEC, calefont que no prende, etc."></textarea>
+                <textarea id="formComment" name="detalles" toolparamname="detalles" class="form-control" rows="4" placeholder="Indique qué ocurre: olor a gas, rechazo en inspección SEC, calefont que no prende, etc."></textarea>
               </div>
 
-              <button type="submit" class="btn btn-whatsapp btn-lg" style="width: 100%;">
+              <button type="submit" class="btn btn-whatsapp btn-lg" style="width: 100%;" aria-label="Enviar requerimiento técnico a WhatsApp al +56 9 4987 7316">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.353.101.174.449.741.963 1.2 1.066.95 1.96 1.246 2.239 1.39.278.145.441.13.607-.058.166-.188.708-.824.896-1.113.188-.289.376-.241.636-.145.26.096 1.646.776 1.927.915.281.139.469.208.538.327.069.119.069.69-.075 1.095z"/></svg>
                 <span>Conectar con Instalador SEC en WhatsApp</span>
               </button>

@@ -362,11 +362,15 @@ require_once __DIR__ . '/includes/header.php';
           <p>Complete los datos y conecte directamente por WhatsApp con el diagnóstico inicial de su instalación:</p>
         </div>
 
-        <form id="quickQuoteForm">
+        <form id="quickQuoteForm"
+              toolname="solicitar_cotizacion_gas"
+              tooldescription="Formulario para solicitar cotización y atención técnica de gasfitería e instalaciones de gas certificadas SEC en Santiago y V Región."
+              method="GET"
+              action="<?= SITE_URL ?>/contacto">
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
             <div class="form-group">
               <label for="formService" class="form-label">Servicio Requerido *</label>
-              <select id="formService" class="form-control" required>
+              <select id="formService" name="servicio" toolparamname="servicio" class="form-control" required>
                 <option value="Detección de Fuga de Gas sin Romper">Detección de Fuga de Gas sin Romper</option>
                 <option value="Sellado de Cañería con Prodoral R6-1">Sellado de Cañería con Prodoral R6-1</option>
                 <option value="Certificación y Sello Verde SEC">Certificación y Sello Verde SEC</option>
@@ -380,14 +384,14 @@ require_once __DIR__ . '/includes/header.php';
 
             <div class="form-group">
               <label for="formCommune" class="form-label">Comuna o Sector *</label>
-              <input type="text" id="formCommune" class="form-control" placeholder="Ej: Las Condes, Vitacura, Ñuñoa..." required>
+              <input type="text" id="formCommune" name="comuna" toolparamname="comuna" class="form-control" placeholder="Ej: Las Condes, Vitacura, Ñuñoa..." required>
             </div>
           </div>
 
           <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 1.25rem;">
             <div class="form-group">
               <label for="formUrgency" class="form-label">Nivel de Urgencia</label>
-              <select id="formUrgency" class="form-control">
+              <select id="formUrgency" name="urgencia" toolparamname="urgencia" class="form-control">
                 <option value="Urgente - Hoy Mismo">Urgente - Hoy Mismo</option>
                 <option value="Próximos días">Próximos días</option>
                 <option value="Solo Cotización">Solo Cotización</option>
@@ -396,12 +400,12 @@ require_once __DIR__ . '/includes/header.php';
 
             <div class="form-group">
               <label for="formComment" class="form-label">Síntomas o Detalles (Opcional)</label>
-              <input type="text" id="formComment" class="form-control" placeholder="Ej: Olor a gas en la cocina, corte Metrogas, calefont no enciende...">
+              <input type="text" id="formComment" name="detalles" toolparamname="detalles" class="form-control" placeholder="Ej: Olor a gas en la cocina, corte Metrogas, calefont no enciende...">
             </div>
           </div>
 
           <div style="text-align: center; margin-top: 1rem;">
-            <button type="submit" class="btn btn-whatsapp btn-lg" style="width: 100%; max-width: 480px;">
+            <button type="submit" class="btn btn-whatsapp btn-lg" style="width: 100%; max-width: 480px;" aria-label="Enviar solicitud de cotización por WhatsApp al +56 9 4987 7316">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.353.101.174.449.741.963 1.2 1.066.95 1.96 1.246 2.239 1.39.278.145.441.13.607-.058.166-.188.708-.824.896-1.113.188-.289.376-.241.636-.145.26.096 1.646.776 1.927.915.281.139.469.208.538.327.069.119.069.69-.075 1.095z"/></svg>
               <span>Enviar a WhatsApp (+56 9 4987 7316)</span>
             </button>

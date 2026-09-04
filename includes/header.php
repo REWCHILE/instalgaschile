@@ -27,28 +27,22 @@ if ($path_segment === 'blog') {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <!-- Google Fonts Preconnect -->
+  <!-- Google Fonts Preconnect & Carga Estable -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap">
 
-  <!-- Preload de Fuentes WOFF2 para Cero Desplazamiento de Texto (0 CLS) -->
-  <link rel="preload" href="https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Hoja de Estilos Principal (22 KB / ~5 KB gzipped: Renderizado Instantáneo 0 CLS) -->
+  <link rel="stylesheet" href="<?= SITE_URL ?>/assets/css/style.css">
 
-  <!-- Carga Asíncrona No Bloqueante de Google Fonts (display=swap) -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap">
-  </noscript>
-
-  <!-- CSS Crítico en Línea (Above-the-Fold Instantáneo - Cero CLS y 0ms bloqueo de LCP/FCP) -->
+  <!-- CSS Crítico en Línea (Consolidación y Cero Desplazamiento de Diseño CLS = 0.00) -->
   <style>
     :root {
       --primary-blue: #0d254c;
       --primary-blue-dark: #07162e;
       --accent-red: #c62828;
       --sec-green: #10b981;
-      --sec-green-dark: #059669;
+      --sec-green-dark: #047857;
       --bg-light: #f8fafc;
       --border-color: #e2e8f0;
       --text-dark: #0f172a;
@@ -60,24 +54,25 @@ if ($path_segment === 'blog') {
       --radius-full: 9999px;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: var(--font-body); background-color: var(--bg-light); color: var(--text-dark); line-height: 1.6; -webkit-font-smoothing: antialiased; }
-    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.25rem; }
+    body { font-family: var(--font-body); background-color: var(--bg-light); color: var(--text-dark); line-height: 1.6; -webkit-font-smoothing: antialiased; padding-bottom: 70px; }
+    @media (min-width: 992px) { body { padding-bottom: 0; } }
+    .container { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 1.25rem; }
     
     /* Top Bar */
-    .top-bar { background-color: #07152b; color: #ffffff; font-size: 0.85rem; padding: 0.5rem 0; min-height: 38px; }
+    .top-bar { background: linear-gradient(90deg, #07162e 0%, #0d254c 100%); color: #ffffff; font-size: 0.85rem; padding: 0.5rem 0; min-height: 38px; border-bottom: 2px solid #c62828; }
     .top-bar-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
     .top-badge-sec { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: #38bdf8; text-decoration: none; }
     .top-emergency-contact { display: flex; align-items: center; gap: 1.25rem; }
     .top-phone-link { color: #ffffff; text-decoration: none; display: flex; align-items: center; gap: 0.4rem; font-weight: 600; }
     
     /* Header */
-    .site-header { background: #ffffff; box-shadow: 0 2px 8px rgba(13,37,76,0.08); position: sticky; top: 0; z-index: 100; min-height: 70px; }
-    .navbar { display: flex; justify-content: space-between; align-items: center; height: 80px; }
+    .site-header { background: #ffffff; box-shadow: 0 2px 8px rgba(13,37,76,0.08); position: sticky; top: 0; z-index: 100; min-height: 70px; border-bottom: 1px solid #e2e8f0; }
+    .navbar { display: flex; justify-content: space-between; align-items: center; min-height: 70px; padding: 0.75rem 0; }
     .brand-wrapper { display: flex; align-items: center; gap: 0.85rem; text-decoration: none; }
     .brand-logo-img { width: 58px; height: 58px; border-radius: 8px; flex-shrink: 0; }
-    .brand-title { font-family: var(--font-heading); font-size: 1.45rem; font-weight: 800; color: var(--primary-blue); line-height: 1.1; }
+    .brand-title { font-family: var(--font-heading); font-size: 1.35rem; font-weight: 800; color: var(--primary-blue); line-height: 1.1; letter-spacing: -0.02em; }
     .brand-title span { color: var(--accent-red); }
-    .brand-subtitle { font-size: 0.75rem; color: #059669; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; display: block; }
+    .brand-subtitle { font-size: 0.75rem; color: #047857; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; display: block; }
     .nav-menu { display: flex; align-items: center; gap: 1.75rem; list-style: none; }
     .menu-toggle { display: none; background: none; border: none; cursor: pointer; color: var(--primary-blue); }
     
@@ -108,19 +103,13 @@ if ($path_segment === 'blog') {
     .btn-sm { padding: 0.4rem 0.85rem; font-size: 0.85rem; }
     
     @media (max-width: 991px) {
-      .navbar { height: 70px; }
+      .navbar { min-height: 70px; padding: 0.75rem 0; }
       .nav-menu { display: none; }
       .menu-toggle { display: block; }
       .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; }
       .hero-title { font-size: 2rem; }
     }
   </style>
-
-  <!-- Carga Asíncrona de la Hoja de Estilos Completa -->
-  <link rel="preload" as="style" href="<?= SITE_URL ?>/assets/css/style.css" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="<?= SITE_URL ?>/assets/css/style.css">
-  </noscript>
 
   <!-- Favicons WebP -->
   <link rel="icon" type="image/webp" href="<?= SITE_URL ?>/assets/img/logo-instalgas.webp">

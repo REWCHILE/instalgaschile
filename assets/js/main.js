@@ -81,6 +81,78 @@
         window.open(targetUrl, '_blank');
       });
     }
+
+    // 4. Registro Imperativo WebMCP (Google Chrome 150+ / Navegación Agéntica)
+    if (typeof navigator !== 'undefined' && navigator.modelContext && typeof navigator.modelContext.registerTool === 'function') {
+      try {
+        navigator.modelContext.registerTool({
+          name: 'solicitar_cotizacion_gas',
+          description: 'Genera un requerimiento técnico para cotización o visita urgente con el instalador autorizado SEC Domingo Isaín (detección de fugas con gas trazador, sellado Prodoral R6-1 sin picar, Sello Verde SEC o conversión de gas).',
+          inputSchema: {
+            type: 'object',
+            properties: {
+              servicio: {
+                type: 'string',
+                description: 'Servicio solicitado: Detección de Fugas con Gas Trazador, Sellado Prodoral R6-1, Certificación Sello Verde SEC, etc.',
+                enum: [
+                  'Detección de Fugas con Gas Trazador',
+                  'Sellado con Prodoral R6-1 sin Romper',
+                  'Certificación SEC / Sello Verde',
+                  'Regularización de Sello Rojo / Corte de Gas',
+                  'Mantención / Reparación de Calefont',
+                  'Instalación de Red de Cobre Nueva',
+                  'Urgencia 24 Horas'
+                ]
+              },
+              comuna: {
+                type: 'string',
+                description: 'Comuna o sector en Santiago o V Región (ej: Providencia, Las Condes, Vitacura, Ñuñoa, etc.)'
+              },
+              urgencia: {
+                type: 'string',
+                description: 'Nivel de urgencia (ej: Urgente - Hoy Mismo, Próximos días, Solo Cotización)'
+              },
+              detalles: {
+                type: 'string',
+                description: 'Detalles adicionales o síntomas observados en la instalación'
+              }
+            },
+            required: ['servicio', 'comuna']
+          },
+          execute: async function (params) {
+            const baseText = `Hola Instalgas Chile, necesito atención técnica con Domingo Isaín (SEC).\n- *Servicio:* ${params.servicio}\n- *Comuna:* ${params.comuna}\n- *Urgencia:* ${params.urgencia || 'Normal'}${params.detalles ? `\n- *Detalle:* ${params.detalles}` : ''}`;
+            const targetUrl = `https://wa.me/56949877316?text=${encodeURIComponent(baseText)}`;
+            return {
+              status: 'success',
+              message: 'Solicitud estructurada correctamente.',
+              whatsapp_url: targetUrl,
+              telefono_urgencias: '+56 9 4987 7316'
+            };
+          }
+        });
+
+        navigator.modelContext.registerTool({
+          name: 'verificar_licencia_sec',
+          description: 'Obtiene los datos oficiales de certificación SEC del Director Técnico Domingo Isaín Plaza Caamaño y el enlace de verificación en el portal oficial de la SEC del Gobierno de Chile.',
+          inputSchema: {
+            type: 'object',
+            properties: {}
+          },
+          execute: async function () {
+            return {
+              nombre: 'Domingo Isaín Plaza Caamaño',
+              rut: '12.738.961-6',
+              licencia: 'Instalador Autorizado SEC Clase 3',
+              estado: 'ACTIVO',
+              normativas_aplicables: ['DS 191', 'DS 66', 'DS 222', 'DS 20', 'DS 67'],
+              portal_validacion_url: 'https://wlhttp.sec.cl/rnii/public/licencia/qr?o=285eb263edf5cb049f3f4cc7fa0d2182'
+            };
+          }
+        });
+      } catch (err) {
+        console.debug('WebMCP registration error:', err);
+      }
+    }
   }
 
   if (document.readyState === 'loading') {
