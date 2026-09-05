@@ -39,7 +39,9 @@ if (!$authorized) {
 
 // Ejecutar pull en el directorio del proyecto
 chdir(__DIR__);
-$output = shell_exec('git pull origin main 2>&1');
+$git_path = trim(shell_exec('which git 2>&1') ?: '/usr/bin/git');
+$cmd = "git config --global --add safe.directory " . escapeshellarg(__DIR__) . " 2>&1; " . $git_path . " pull origin main 2>&1";
+$output = shell_exec($cmd);
 
 header('Content-Type: text/plain; charset=utf-8');
 echo "=== DESPLIEGUE AUTOMÁTICO INSTALGAS CHILE ===" . PHP_EOL;
