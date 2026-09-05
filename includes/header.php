@@ -28,8 +28,8 @@ if ($path_segment === 'blog') {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
   <!-- Fuentes Autohospedadas Locales (Cero Peticiones a Servidores Externos y Cero Cadena Crítica) -->
-  <link rel="preload" href="/assets/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
 
   <!-- Hoja de Estilos Centralizada en Línea (Cero Bloqueo de Red, Cero Peticiones Encadenadas y Cero Desplazamiento CLS = 0.00) -->
   <style>
