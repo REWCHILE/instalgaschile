@@ -146,7 +146,23 @@ function render_seo_meta($config = []) {
             }
           }
         ]
-      }
+      },
+      "potentialAction": [
+        {
+          "@type": "CommunicateAction",
+          "name": "Solicitar Urgencia o Atención Técnica SEC vía WhatsApp",
+          "target": "https://wa.me/56949877316"
+        },
+        {
+          "@type": "ReserveAction",
+          "name": "Agendar Inspección y Diagnóstico Técnico a Domicilio",
+          "target": "<?= SITE_URL ?>/contacto",
+          "result": {
+            "@type": "Reservation",
+            "name": "Visita Técnica Instalador SEC"
+          }
+        }
+      ]
     }
     </script>
 

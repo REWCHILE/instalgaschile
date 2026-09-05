@@ -363,14 +363,14 @@ require_once __DIR__ . '/includes/header.php';
         </div>
 
         <form id="quickQuoteForm"
-              toolname="solicitar_cotizacion_gas"
+              toolname="solicitar_cotizacion_web"
               tooldescription="Formulario para solicitar cotización y atención técnica de gasfitería e instalaciones de gas certificadas SEC en Santiago y V Región."
               method="GET"
               action="<?= SITE_URL ?>/contacto">
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
             <div class="form-group">
               <label for="formService" class="form-label">Servicio Requerido *</label>
-              <select id="formService" name="servicio" toolparamname="servicio" class="form-control" required>
+              <select id="formService" name="servicio" toolparamname="servicio" toolparamdescription="Tipo de servicio técnico de gas requerido (detección de fugas, sello verde, etc.)" class="form-control" required>
                 <option value="Detección de Fuga de Gas sin Romper">Detección de Fuga de Gas sin Romper</option>
                 <option value="Sellado de Cañería con Prodoral R6-1">Sellado de Cañería con Prodoral R6-1</option>
                 <option value="Certificación y Sello Verde SEC">Certificación y Sello Verde SEC</option>
@@ -384,14 +384,14 @@ require_once __DIR__ . '/includes/header.php';
 
             <div class="form-group">
               <label for="formCommune" class="form-label">Comuna o Sector *</label>
-              <input type="text" id="formCommune" name="comuna" toolparamname="comuna" class="form-control" placeholder="Ej: Las Condes, Vitacura, Ñuñoa..." required>
+              <input type="text" id="formCommune" name="comuna" toolparamname="comuna" toolparamdescription="Comuna o sector del domicilio en Santiago o V Región" class="form-control" placeholder="Ej: Las Condes, Vitacura, Ñuñoa..." required>
             </div>
           </div>
 
           <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 1.25rem;">
             <div class="form-group">
               <label for="formUrgency" class="form-label">Nivel de Urgencia</label>
-              <select id="formUrgency" name="urgencia" toolparamname="urgencia" class="form-control">
+              <select id="formUrgency" name="urgencia" toolparamname="urgencia" toolparamdescription="Nivel de urgencia o rapidez requerida" class="form-control">
                 <option value="Urgente - Hoy Mismo">Urgente - Hoy Mismo</option>
                 <option value="Próximos días">Próximos días</option>
                 <option value="Solo Cotización">Solo Cotización</option>
@@ -400,7 +400,7 @@ require_once __DIR__ . '/includes/header.php';
 
             <div class="form-group">
               <label for="formComment" class="form-label">Síntomas o Detalles (Opcional)</label>
-              <input type="text" id="formComment" name="detalles" toolparamname="detalles" class="form-control" placeholder="Ej: Olor a gas en la cocina, corte Metrogas, calefont no enciende...">
+              <input type="text" id="formComment" name="detalles" toolparamname="detalles" toolparamdescription="Detalles o síntomas de la falla en la red de gas" class="form-control" placeholder="Ej: Olor a gas en la cocina, corte Metrogas, calefont no enciende...">
             </div>
           </div>
 

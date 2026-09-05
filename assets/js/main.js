@@ -82,62 +82,75 @@
       });
     }
 
-    // 4. Registro Imperativo WebMCP (Google Chrome 150+ / Navegación Agéntica)
-    if (typeof navigator !== 'undefined' && navigator.modelContext && typeof navigator.modelContext.registerTool === 'function') {
+    // 4. Registro Imperativo WebMCP (Google Chrome 150+ / W3C Model Context Protocol)
+    const mc = (typeof window !== 'undefined' && window.modelContext) ||
+               (typeof navigator !== 'undefined' && navigator.modelContext) ||
+               (typeof document !== 'undefined' && document.modelContext);
+
+    if (mc && typeof mc.registerTool === 'function') {
       try {
-        navigator.modelContext.registerTool({
+        const quoteSchema = {
+          type: 'object',
+          properties: {
+            servicio: {
+              type: 'string',
+              description: 'Servicio solicitado: Detección de Fugas con Gas Trazador, Sellado Prodoral R6-1 sin Romper, Certificación Sello Verde SEC, etc.',
+              enum: [
+                'Detección de Fugas con Gas Trazador',
+                'Sellado con Prodoral R6-1 sin Romper',
+                'Certificación SEC / Sello Verde',
+                'Regularización de Sello Rojo / Corte de Gas',
+                'Mantención / Reparación de Calefont',
+                'Instalación de Red de Cobre Nueva',
+                'Urgencia 24 Horas'
+              ]
+            },
+            comuna: {
+              type: 'string',
+              description: 'Comuna o sector en Santiago o V Región (ej: Providencia, Las Condes, Vitacura, Ñuñoa, etc.)'
+            },
+            urgencia: {
+              type: 'string',
+              description: 'Nivel de urgencia (ej: Urgente - Hoy Mismo, Próximos días, Solo Cotización)'
+            },
+            detalles: {
+              type: 'string',
+              description: 'Detalles adicionales o síntomas observados en la instalación'
+            }
+          },
+          required: ['servicio', 'comuna']
+        };
+
+        mc.registerTool({
           name: 'solicitar_cotizacion_gas',
           description: 'Genera un requerimiento técnico para cotización o visita urgente con el instalador autorizado SEC Domingo Isaín (detección de fugas con gas trazador, sellado Prodoral R6-1 sin picar, Sello Verde SEC o conversión de gas).',
-          inputSchema: {
-            type: 'object',
-            properties: {
-              servicio: {
-                type: 'string',
-                description: 'Servicio solicitado: Detección de Fugas con Gas Trazador, Sellado Prodoral R6-1, Certificación Sello Verde SEC, etc.',
-                enum: [
-                  'Detección de Fugas con Gas Trazador',
-                  'Sellado con Prodoral R6-1 sin Romper',
-                  'Certificación SEC / Sello Verde',
-                  'Regularización de Sello Rojo / Corte de Gas',
-                  'Mantención / Reparación de Calefont',
-                  'Instalación de Red de Cobre Nueva',
-                  'Urgencia 24 Horas'
-                ]
-              },
-              comuna: {
-                type: 'string',
-                description: 'Comuna o sector en Santiago o V Región (ej: Providencia, Las Condes, Vitacura, Ñuñoa, etc.)'
-              },
-              urgencia: {
-                type: 'string',
-                description: 'Nivel de urgencia (ej: Urgente - Hoy Mismo, Próximos días, Solo Cotización)'
-              },
-              detalles: {
-                type: 'string',
-                description: 'Detalles adicionales o síntomas observados en la instalación'
-              }
-            },
-            required: ['servicio', 'comuna']
-          },
+          parameters: quoteSchema,
+          inputSchema: quoteSchema,
           execute: async function (params) {
-            const baseText = `Hola Instalgas Chile, necesito atención técnica con Domingo Isaín (SEC).\n- *Servicio:* ${params.servicio}\n- *Comuna:* ${params.comuna}\n- *Urgencia:* ${params.urgencia || 'Normal'}${params.detalles ? `\n- *Detalle:* ${params.detalles}` : ''}`;
+            const p = params || {};
+            const baseText = `Hola Instalgas Chile, necesito atención técnica con Domingo Isaín (SEC).\n- *Servicio:* ${p.servicio || 'General'}\n- *Comuna:* ${p.comuna || 'Santiago'}\n- *Urgencia:* ${p.urgencia || 'Normal'}${p.detalles ? `\n- *Detalle:* ${p.detalles}` : ''}`;
             const targetUrl = `https://wa.me/56949877316?text=${encodeURIComponent(baseText)}`;
             return {
               status: 'success',
-              message: 'Solicitud estructurada correctamente.',
+              message: 'Solicitud técnica estructurada correctamente.',
               whatsapp_url: targetUrl,
-              telefono_urgencias: '+56 9 4987 7316'
+              telefono_urgencias: '+56 9 4987 7316',
+              director_tecnico: 'Domingo Isaín Plaza Caamaño',
+              licencia_sec: 'Instalador Autorizado SEC Clase 3'
             };
           }
         });
 
-        navigator.modelContext.registerTool({
+        const secSchema = {
+          type: 'object',
+          properties: {}
+        };
+
+        mc.registerTool({
           name: 'verificar_licencia_sec',
           description: 'Obtiene los datos oficiales de certificación SEC del Director Técnico Domingo Isaín Plaza Caamaño y el enlace de verificación en el portal oficial de la SEC del Gobierno de Chile.',
-          inputSchema: {
-            type: 'object',
-            properties: {}
-          },
+          parameters: secSchema,
+          inputSchema: secSchema,
           execute: async function () {
             return {
               nombre: 'Domingo Isaín Plaza Caamaño',
@@ -155,9 +168,17 @@
     }
   }
 
+  function scheduleInit() {
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(initApp, { timeout: 1000 });
+    } else {
+      setTimeout(initApp, 10);
+    }
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initApp);
+    document.addEventListener('DOMContentLoaded', scheduleInit);
   } else {
-    initApp();
+    scheduleInit();
   }
 })();

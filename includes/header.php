@@ -27,15 +27,13 @@ if ($path_segment === 'blog') {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <!-- Google Fonts Preconnect & Carga Estable -->
+  <!-- Google Fonts Preconnect & Preload Directo de Fuentes WOFF2 (Cero Cadena Crítica y Cero FOUT) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap">
+  <link rel="preload" href="https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2" as="font" type="font/woff2" crossorigin>
 
-  <!-- Hoja de Estilos Principal (22 KB / ~5 KB gzipped: Renderizado Instantáneo 0 CLS) -->
-  <link rel="stylesheet" href="<?= SITE_URL ?>/assets/css/style.css">
-
-  <!-- CSS Crítico en Línea (Consolidación y Cero Desplazamiento de Diseño CLS = 0.00) -->
+  <!-- CSS Crítico en Línea Prioritario (Pintado Instantáneo en 0ms y Cero Desplazamiento CLS = 0.00) -->
   <style>
     :root {
       --primary-blue: #0d254c;
@@ -57,6 +55,10 @@ if ($path_segment === 'blog') {
     body { font-family: var(--font-body); background-color: var(--bg-light); color: var(--text-dark); line-height: 1.6; -webkit-font-smoothing: antialiased; padding-bottom: 70px; }
     @media (min-width: 992px) { body { padding-bottom: 0; } }
     .container { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 1.25rem; }
+    h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); color: var(--primary-blue); font-weight: 700; line-height: 1.25; }
+    p { margin-bottom: 1rem; color: var(--text-muted); }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
     
     /* Top Bar */
     .top-bar { background: linear-gradient(90deg, #07162e 0%, #0d254c 100%); color: #ffffff; font-size: 0.85rem; padding: 0.5rem 0; min-height: 38px; border-bottom: 2px solid #c62828; }
@@ -110,6 +112,18 @@ if ($path_segment === 'blog') {
       .hero-title { font-size: 2rem; }
     }
   </style>
+
+  <!-- Carga Asíncrona No Bloqueante de Google Fonts (Ahorro ~780ms) -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap">
+  </noscript>
+
+  <!-- Carga Asíncrona de la Hoja de Estilos Principal (Ahorro ~150ms / Cero Bloqueo de Render) -->
+  <link rel="preload" as="style" href="<?= SITE_URL ?>/assets/css/style.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="<?= SITE_URL ?>/assets/css/style.css">
+  </noscript>
 
   <!-- Favicons WebP -->
   <link rel="icon" type="image/webp" href="<?= SITE_URL ?>/assets/img/logo-instalgas.webp">

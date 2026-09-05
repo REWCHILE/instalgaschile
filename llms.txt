@@ -32,8 +32,8 @@
 - [Mapa del Sitio XML](https://instalgaschile.cl/sitemap.xml)
 
 ## Herramientas para Agentes de IA (WebMCP & Navegación Agéntica)
-- **WebMCP Declarativo:** Los formularios en `/` y `/contacto` exponen `toolname="solicitar_cotizacion_gas"` y `toolname="solicitar_diagnostico_gas"` para agentes de Chromium/Chrome 150+.
-- **WebMCP Imperativo:** Integrado vía `navigator.modelContext.registerTool`:
-  - `solicitar_cotizacion_gas`: Genera solicitudes estructuradas de cotización y urgencias 24/7.
-  - `verificar_licencia_sec`: Provee metadatos verificables del Instalador Autorizado SEC Clase 3 (RUT 12.738.961-6) con enlace directo al portal oficial de la SEC.
+- **WebMCP Declarativo:** El formulario principal en `/` expone `toolname="solicitar_cotizacion_web"` y en `/contacto` expone `toolname="solicitar_diagnostico_web"`, ambos enriquecidos con `toolparamdescription` en cada input para agentes autónomos.
+- **WebMCP Imperativo:** Compatible con `window.modelContext`, `navigator.modelContext` y `document.modelContext`:
+  - `solicitar_cotizacion_gas`: Genera requerimientos técnicos estructurados para visita de urgencia 24/7 o cotización con enlace directo a WhatsApp.
+  - `verificar_licencia_sec`: Provee credenciales oficiales auditables del Director Técnico Domingo Isaín Plaza Caamaño (RUT 12.738.961-6, Instalador SEC Clase 3, Estado: ACTIVO) con URL directa al portal oficial de la SEC.
 

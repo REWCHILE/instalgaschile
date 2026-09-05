@@ -86,3 +86,22 @@ En la República de Chile, toda intervención en instalaciones de gas se rige po
 - [¿Qué Hace un Gasfiter Certificado SEC?](https://instalgaschile.cl/que-hace-un-gasfiter-certificado-sec): Atribuciones del Decreto Supremo N° 191 (Clase 3), montaje de redes de cobre (DS 66) y Sello Verde.
 - [Gasfiter Certificado SEC en Vitacura y Zona Oriente](https://instalgaschile.cl/gasfiter-certificado-sec-vitacura): Procedimientos de alta precisión para viviendas de alto estándar, detección no destructiva de fugas en pisos nobles y regularización en condominios.
 
+---
+
+## 7. Herramientas para Agentes de IA y WebMCP (Chromium 150+ / Model Context Protocol)
+
+### 7.1 Herramientas Declarativas (HTML Forms)
+- **`solicitar_cotizacion_web`** (Ubicación: `/`):
+  - Recibe: `servicio` (Tipo de atención), `comuna` (Sector), `urgencia` (Prioridad), `detalles` (Síntomas).
+  - Acción: Despacho a WhatsApp con protocolo técnico de urgencia.
+- **`solicitar_diagnostico_web`** (Ubicación: `/contacto`):
+  - Recibe: `servicio`, `comuna`, `urgencia`, `detalles`.
+
+### 7.2 Herramientas Imperativas (JavaScript API)
+- **`solicitar_cotizacion_gas`**:
+  - Parámetros requeridos: `servicio`, `comuna`.
+  - Retorna: JSON estructurado `{ status: "success", message, whatsapp_url, telefono_urgencias, director_tecnico, licencia_sec }`.
+- **`verificar_licencia_sec`**:
+  - Retorna: Credenciales del Director Técnico Domingo Isaín Plaza Caamaño, RUT `12.738.961-6`, Licencia SEC Clase 3, Estado `ACTIVO`, normativas `DS 191, DS 66, DS 222, DS 20, DS 67`, y enlace oficial de verificación QR en `sec.cl`.
+
+

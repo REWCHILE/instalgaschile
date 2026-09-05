@@ -131,13 +131,13 @@ require_once __DIR__ . '/includes/header.php';
             </p>
 
             <form id="quickQuoteForm"
-                  toolname="solicitar_diagnostico_gas"
+                  toolname="solicitar_diagnostico_web"
                   tooldescription="Formulario para solicitar evaluación técnica, presupuesto y diagnóstico de fugas, normalización Sello Verde o redes de gas con el Instalador SEC Domingo Isaín."
                   method="GET"
                   action="<?= SITE_URL ?>/contacto">
               <div class="form-group">
                 <label for="formService" class="form-label">Servicio Requerido *</label>
-                <select id="formService" name="servicio" toolparamname="servicio" class="form-control" required>
+                <select id="formService" name="servicio" toolparamname="servicio" toolparamdescription="Tipo de servicio técnico de gas requerido (fugas, sellado químico, Sello Verde, calefont)" class="form-control" required>
                   <option value="Detección de Fugas con Gas Trazador">Detección de Fugas con Gas Trazador</option>
                   <option value="Sellado con Prodoral R6-1 sin Romper">Sellado con Prodoral R6-1 sin Romper</option>
                   <option value="Certificación SEC / Sello Verde">Certificación SEC / Sello Verde</option>
@@ -150,12 +150,12 @@ require_once __DIR__ . '/includes/header.php';
 
               <div class="form-group">
                 <label for="formCommune" class="form-label">Comuna o Ciudad *</label>
-                <input type="text" id="formCommune" name="comuna" toolparamname="comuna" class="form-control" placeholder="Ej: Providencia, Las Condes, Santiago Centro..." required>
+                <input type="text" id="formCommune" name="comuna" toolparamname="comuna" toolparamdescription="Comuna o ciudad del servicio en Santiago o Región de Valparaíso" class="form-control" placeholder="Ej: Providencia, Las Condes, Santiago Centro..." required>
               </div>
 
               <div class="form-group">
                 <label for="formUrgency" class="form-label">Nivel de Urgencia</label>
-                <select id="formUrgency" name="urgencia" toolparamname="urgencia" class="form-control">
+                <select id="formUrgency" name="urgencia" toolparamname="urgencia" toolparamdescription="Nivel de urgencia o disponibilidad técnica" class="form-control">
                   <option value="Urgente - Emergencia Hoy">Urgente - Emergencia Hoy</option>
                   <option value="Para esta semana">Para esta semana</option>
                   <option value="Consulta o presupuesto previo">Consulta o presupuesto previo</option>
@@ -164,7 +164,7 @@ require_once __DIR__ . '/includes/header.php';
 
               <div class="form-group">
                 <label for="formComment" class="form-label">Descripción del Problema</label>
-                <textarea id="formComment" name="detalles" toolparamname="detalles" class="form-control" rows="4" placeholder="Indique qué ocurre: olor a gas, rechazo en inspección SEC, calefont que no prende, etc."></textarea>
+                <textarea id="formComment" name="detalles" toolparamname="detalles" toolparamdescription="Descripción detallada de la anomalía, fuga o corte de suministro de gas" class="form-control" rows="4" placeholder="Indique qué ocurre: olor a gas, rechazo en inspección SEC, calefont que no prende, etc."></textarea>
               </div>
 
               <button type="submit" class="btn btn-whatsapp btn-lg" style="width: 100%;" aria-label="Enviar requerimiento técnico a WhatsApp al +56 9 4987 7316">
