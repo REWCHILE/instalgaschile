@@ -104,6 +104,13 @@ if ($path_segment === 'blog') {
     .btn-lg { padding: 0.95rem 1.85rem; font-size: 1.1rem; }
     .btn-sm { padding: 0.4rem 0.85rem; font-size: 0.85rem; }
     
+    /* Hero Badges & Nav Elements */
+    .hero-badges-strip { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.15); }
+    .hero-badge-item { display: flex; align-items: center; gap: 0.6rem; font-size: 0.875rem; color: #e2e8f0; }
+    .hero-badge-icon { width: 24px; height: 24px; flex-shrink: 0; color: #34d399; }
+    .nav-link { font-size: 0.95rem; font-weight: 600; color: var(--text-dark); padding: 0.5rem 0; }
+    .nav-actions { display: flex; align-items: center; gap: 0.75rem; }
+
     @media (max-width: 991px) {
       .navbar { min-height: 70px; padding: 0.75rem 0; }
       .nav-menu { display: none; }
@@ -113,16 +120,13 @@ if ($path_segment === 'blog') {
     }
   </style>
 
+  <!-- Hoja de Estilos Principal (22 KB / ~5 KB gzipped: Renderizado Estable con Cero CLS en Desktop y Mobile) -->
+  <link rel="stylesheet" href="<?= SITE_URL ?>/assets/css/style.css">
+
   <!-- Carga Asíncrona No Bloqueante de Google Fonts (Ahorro ~780ms) -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap">
-  </noscript>
-
-  <!-- Carga Asíncrona de la Hoja de Estilos Principal (Ahorro ~150ms / Cero Bloqueo de Render) -->
-  <link rel="preload" as="style" href="<?= SITE_URL ?>/assets/css/style.css" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="<?= SITE_URL ?>/assets/css/style.css">
   </noscript>
 
   <!-- Favicons WebP -->
